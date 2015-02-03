@@ -1,0 +1,16 @@
+name = PHP-FFMpeg
+description = Integrates with the PHP FFmpeg library.
+core = 7.x
+package = Development
+dependencies[] = composer_manager
+dependencies[] = libraries
+files[] = includes/PHPFFMpegLogger.inc
+files[] = includes/PHPFFMpegCache.inc
+configure = admin/config/development/php-ffmpeg
+
+; Information added by Drupal.org packaging script on 2014-08-22
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "php_ffmpeg"
+datestamp = "1408727631"
+
