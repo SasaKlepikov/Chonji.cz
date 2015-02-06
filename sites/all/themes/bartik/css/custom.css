@@ -1946,4 +1946,52 @@ body.node-type-sestava .group-informace-o-sestave .fieldset-wrapper .group-right
     body.node-type-sestava .group-informace-o-sestave .fieldset-wrapper .group-right:hover .field-name-field-diagram-sestavy-mini .field-items .field-item img {
       margin-top: -23px !important; }
 
+#page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content {
+  text-align: center; }
+  #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row {
+    display: inline-block;
+    margin: 2px; }
+    #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row .field-content {
+      display: block; }
+      #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row .field-content a {
+        display: block;
+        padding: 5px 10px;
+        background-color: #202020;
+        border: solid 2px #171717;
+        width: 95px;
+        color: #CFE3EC;
+        font-weight: bold;
+        text-align: center; }
+        #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row .field-content a:hover, #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row .field-content a:active, #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row .field-content a:focus {
+          border-color: #CFE3EC;
+          text-decoration: none; }
+
+body.page-node-39 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-1 .field-content a,
+body.page-node-54 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-2 .field-content a,
+body.page-node-65 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-3 .field-content a,
+body.page-node-66 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-4 .field-content a,
+body.page-node-67 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-5 .field-content a,
+body.page-node-315 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-6 .field-content a,
+body.page-node-316 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-7 .field-content a,
+body.page-node-317 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-8 .field-content a,
+body.page-node-318 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-9 .field-content a,
+body.page-node-319 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-10 .field-content a,
+body.page-node-320 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-11 .field-content a,
+body.page-node-321 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-12 .field-content a,
+body.page-node-322 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-13 .field-content a,
+body.page-node-323 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-14 .field-content a,
+body.page-node-324 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-15 .field-content a,
+body.page-node-325 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-16 .field-content a,
+body.page-node-326 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-17 .field-content a,
+body.page-node-327 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-18 .field-content a,
+body.page-node-328 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-19 .field-content a,
+body.page-node-329 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-20 .field-content a,
+body.page-node-330 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-21 .field-content a,
+body.page-node-331 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-22 .field-content a,
+body.page-node-332 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-23 .field-content a,
+body.page-node-333 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-24 .field-content a,
+body.page-node-334 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-25 .field-content a,
+body.page-node-335 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-26 .field-content a {
+  border-color: #CFE3EC; }
+
 /*# sourceMappingURL=custom.css.map */
