@@ -1994,4 +1994,144 @@ body.page-node-334 #page-wrapper #page #main-wrapper #main #content .section .re
 body.page-node-335 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-26 .field-content a {
   border-color: #CFE3EC; }
 
+.vocabulary-seznam-technik .field-name-field-cesky-prepis-techniky,
+.vocabulary-seznam-technik .field-name-field-korejsky-prepis-techniky,
+.vocabulary-seznam-technik .field-name-field-cesky-prepis-prip-tech,
+.vocabulary-seznam-technik .field-name-field-korejsk-prepis-prip-tech,
+.vocabulary-seznam-pripravnych-postoju .field-name-field-cesky-prepis-techniky,
+.vocabulary-seznam-pripravnych-postoju .field-name-field-korejsky-prepis-techniky,
+.vocabulary-seznam-pripravnych-postoju .field-name-field-cesky-prepis-prip-tech,
+.vocabulary-seznam-pripravnych-postoju .field-name-field-korejsk-prepis-prip-tech {
+  margin-bottom: 10px;
+  background: #202020 !important;
+  border: solid 2px #171717 !important;
+  padding: 5px 10px; }
+.vocabulary-seznam-technik .flexslider,
+.vocabulary-seznam-pripravnych-postoju .flexslider {
+  margin: 0 0 10px 0 !important;
+  padding: 10px 82px;
+  background: #202020 !important;
+  border: solid 2px #171717 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none; }
+  .vocabulary-seznam-technik .flexslider .flex-viewport,
+  .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport {
+    overflow: hidden; }
+    .vocabulary-seznam-technik .flexslider .flex-viewport ul,
+    .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul {
+      padding: 0;
+      margin: 0; }
+      .vocabulary-seznam-technik .flexslider .flex-viewport ul li,
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul li {
+        margin-right: 10px; }
+        .vocabulary-seznam-technik .flexslider .flex-viewport ul li img,
+        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul li img {
+          cursor: pointer; }
+  .vocabulary-seznam-technik .flexslider .flex-direction-nav,
+  .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav {
+    padding: 0;
+    margin: 0; }
+    .vocabulary-seznam-technik .flexslider .flex-direction-nav li a,
+    .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a {
+      color: #19C0DB;
+      text-align: center;
+      opacity: 0.5 !important;
+      display: block !important; }
+      .vocabulary-seznam-technik .flexslider .flex-direction-nav li a:before,
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:before {
+        font-family: "flexslider-icon";
+        font-size: 40px;
+        line-height: 1;
+        text-shadow: none !important;
+        display: inline-block; }
+      .vocabulary-seznam-technik .flexslider .flex-direction-nav li a:hover, .vocabulary-seznam-technik .flexslider .flex-direction-nav li a:active, .vocabulary-seznam-technik .flexslider .flex-direction-nav li a:focus,
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:hover,
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:active,
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:focus {
+        opacity: 1 !important; }
+      .vocabulary-seznam-technik .flexslider .flex-direction-nav li a.flex-prev,
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-prev {
+        left: 22px !important; }
+        .vocabulary-seznam-technik .flexslider .flex-direction-nav li a.flex-prev:before,
+        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-prev:before {
+          content: '\f001'; }
+      .vocabulary-seznam-technik .flexslider .flex-direction-nav li a.flex-next,
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-next {
+        right: 22px !important; }
+        .vocabulary-seznam-technik .flexslider .flex-direction-nav li a.flex-next:before,
+        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-next:before {
+          content: '\f002'; }
+
+body.page-taxonomy-term .content {
+  text-align: center; }
+  body.page-taxonomy-term .content .term-listing-heading {
+    padding: 0;
+    border: none;
+    text-align: left;
+    margin-bottom: 10px; }
+    body.page-taxonomy-term .content .term-listing-heading .field-type-markup {
+      border-top: solid 5px #202020; }
+      body.page-taxonomy-term .content .term-listing-heading .field-type-markup .field-items {
+        border-top: solid 8px #171717; }
+      body.page-taxonomy-term .content .term-listing-heading .field-type-markup h3 {
+        border-top: solid 5px #202020;
+        margin: 0 !important;
+        padding: 10px 0 5px 0;
+        color: #CFE3EC;
+        font-size: 1.429em;
+        line-height: 1.4; }
+  body.page-taxonomy-term .content .node-teaser {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0 0.5% 10px 0.5%;
+    background: #202020 !important;
+    border: solid 2px #171717 !important;
+    padding: 5px 10px; }
+    body.page-taxonomy-term .content .node-teaser.node-sestava {
+      text-align: center;
+      width: 100px;
+      margin-left: 0;
+      margin-right: 5px; }
+    body.page-taxonomy-term .content .node-teaser h2 {
+      padding: 0 !important;
+      margin: 0 !important; }
+      body.page-taxonomy-term .content .node-teaser h2 a {
+        display: block;
+        padding: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+    body.page-taxonomy-term .content .node-teaser .content {
+      margin: 0; }
+    body.page-taxonomy-term .content .node-teaser .link-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+      body.page-taxonomy-term .content .node-teaser .link-wrapper .links.inline {
+        display: block; }
+        body.page-taxonomy-term .content .node-teaser .link-wrapper .links.inline li {
+          padding: 0 !important;
+          margin: 0 !important; }
+          body.page-taxonomy-term .content .node-teaser .link-wrapper .links.inline li a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: transparent;
+            font-size: 0; }
+    body.page-taxonomy-term .content .node-teaser:hover, body.page-taxonomy-term .content .node-teaser:active, body.page-taxonomy-term .content .node-teaser:focus {
+      border-color: #CFE3EC !important; }
+
 /*# sourceMappingURL=custom.css.map */

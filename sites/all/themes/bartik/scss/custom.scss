@@ -2464,3 +2464,159 @@ body.page-node-334 #page-wrapper #page #main-wrapper #main #content .section .re
 body.page-node-335 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content .views-row.views-row-26 .field-content a {
     border-color: #CFE3EC;
 }
+
+.vocabulary-seznam-technik,
+.vocabulary-seznam-pripravnych-postoju {
+    .field-name-field-cesky-prepis-techniky,
+    .field-name-field-korejsky-prepis-techniky,
+    .field-name-field-cesky-prepis-prip-tech,
+    .field-name-field-korejsk-prepis-prip-tech {
+        margin-bottom: 10px;
+        background: $gray !important;
+        border: solid 2px #171717 !important;
+        padding: 5px 10px;
+    }
+    .flexslider {
+        margin: 0 0 10px 0 !important;
+        padding: 10px 82px;
+        background: $gray !important;
+        border: solid 2px #171717 !important;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -o-border-radius: 0px;
+        border-radius: 0px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+        .flex-viewport {
+            overflow: hidden;
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    margin-right: 10px;
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .flex-direction-nav {
+            padding: 0;
+            margin: 0;
+            li {
+                a {
+                    color: #19C0DB;
+                    text-align: center;
+                    opacity: 0.5 !important;
+                    display: block !important;
+                    &:before {
+                        font-family: "flexslider-icon";
+                        font-size: 40px;
+                        line-height: 1;
+                        text-shadow: none !important;
+                        display: inline-block;
+                    }
+                    &:hover,&:active,&:focus {
+                        opacity: 1 !important;
+                    }
+                    &.flex-prev {
+                        left: 22px !important;
+                        &:before {
+                            content: '\f001';
+                        }
+                    }
+                    &.flex-next {
+                        right: 22px !important;
+                        &:before {
+                            content: '\f002';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+body.page-taxonomy-term {
+    .content {
+        text-align:center;
+        .term-listing-heading {
+            padding: 0;
+            border: none;
+            text-align: left;
+            margin-bottom: 10px;
+            .field-type-markup {
+                border-top: solid 5px $gray;
+                .field-items {
+                    border-top: solid 8px #171717;
+                }
+                h3 {
+                    border-top: solid 5px $gray;
+                    margin: 0 !important;
+                    padding: 10px 0 5px 0;
+                    color: #CFE3EC;
+                    font-size: 1.429em;
+                    line-height: 1.4;
+                }
+            }
+        }
+        .node-teaser {
+            position: relative;
+            display: inline-block;
+            width: 45%;
+            text-align: left;
+            vertical-align: middle;
+            margin: 0 0.5% 10px 0.5%;
+            background: $gray !important;
+            border: solid 2px #171717 !important;
+            padding: 5px 10px;
+            &.node-sestava {
+                text-align: center;
+                width: 100px;
+                margin-left: 0;
+                margin-right: 5px;
+            }
+            h2 {
+                padding: 0 !important;
+                margin: 0 !important;
+                a {
+                    display: block;
+                    padding: 0;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .content {
+                margin: 0;
+            }
+            .link-wrapper {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                .links.inline {
+                    display: block;
+                    li {
+                        padding: 0 !important;
+                        margin: 0 !important;
+                        a {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            color: transparent;
+                            font-size: 0;
+                        }
+                    }
+                }
+            }
+            &:hover,&:active,&:focus {
+                border-color: #CFE3EC !important;
+            }
+        }
+    }
+}
