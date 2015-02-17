@@ -2404,6 +2404,71 @@ body.node-type-sestava {
             }
         }
     }
+    .group-obsazene-techniky {
+        .fieldset-wrapper {
+            .field {
+                .field-label {
+                    font-weight: bold;
+                    color: #CFE3EC;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+                ul {
+                    overflow: hidden;
+                    clear: both;
+                    padding: 5px 0 5px 60px;
+                    margin-left: 0px;
+                    li {
+                        line-height: 15px;
+                        font-size: 11px;
+                    }
+                }
+                a {
+                    line-height: 15px;
+                    font-size: 11px;
+                }
+            }
+            .field-name-field-uvodni-pripravny-postoj,
+            .field-name-field-prubezny-pripravny-postoj,
+            .field-name-field-zaverecny-pripravny-postoj {
+                ul {
+                    padding: 0;
+                }
+            }
+        }
+        .group-poznamky-k-technikam {
+            margin: 30px 0 0 0;
+            .fieldset-wrapper {
+                padding: 0 60px;
+                .field-item {
+                    display: block;
+                    clear: both;
+                    .content {
+                        margin: 0;
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+                    .field-name-field-text-poznamky,
+                    .field-name-field-pohyb {
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-right: 5px;
+                        font-size: 11px;
+                        line-height: 15px;
+                        ul {
+                            padding: 0 !important;
+                        }
+                        a {
+                            display: block;
+                            vertical-align: middle;
+                            font-size: 11px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block {
@@ -2466,11 +2531,14 @@ body.page-node-335 #page-wrapper #page #main-wrapper #main #content .section .re
 }
 
 .vocabulary-seznam-technik,
-.vocabulary-seznam-pripravnych-postoju {
+.vocabulary-seznam-pripravnych-postoju,
+.vocabulary-specialni-pohyb {
     .field-name-field-cesky-prepis-techniky,
     .field-name-field-korejsky-prepis-techniky,
     .field-name-field-cesky-prepis-prip-tech,
-    .field-name-field-korejsk-prepis-prip-tech {
+    .field-name-field-korejsk-prepis-prip-tech,
+    .field-name-field-cesky-prepis-pohybu,
+    .field-name-field-korejsky-prepis-pohybu {
         margin-bottom: 10px;
         background: $gray !important;
         border: solid 2px #171717 !important;
@@ -2478,7 +2546,7 @@ body.page-node-335 #page-wrapper #page #main-wrapper #main #content .section .re
     }
     .flexslider {
         margin: 0 0 10px 0 !important;
-        padding: 10px 82px;
+        padding: 10px 82px 10px 81px;
         background: $gray !important;
         border: solid 2px #171717 !important;
         -webkit-border-radius: 0px;
@@ -2496,8 +2564,12 @@ body.page-node-335 #page-wrapper #page #main-wrapper #main #content .section .re
                 margin: 0;
                 li {
                     margin-right: 10px;
+                    border: solid 1px #CFE3EC;
                     img {
                         cursor: pointer;
+                    }
+                    &:hover,&:focus,&:active {
+                        border-color: #19C0DB;
                     }
                 }
             }
@@ -2573,9 +2645,17 @@ body.page-taxonomy-term {
             padding: 5px 10px;
             &.node-sestava {
                 text-align: center;
-                width: 100px;
+                width: auto;
+                min-width: 105px;
                 margin-left: 0;
                 margin-right: 5px;
+                h2 {
+                    a {
+                        overflow: visible;
+                        text-overflow: inherit;
+                        white-space: normal;
+                    }
+                }
             }
             h2 {
                 padding: 0 !important;

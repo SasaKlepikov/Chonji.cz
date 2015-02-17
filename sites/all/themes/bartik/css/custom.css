@@ -1945,6 +1945,53 @@ body.node-type-sestava .group-informace-o-sestave .fieldset-wrapper .group-right
       display: block; }
     body.node-type-sestava .group-informace-o-sestave .fieldset-wrapper .group-right:hover .field-name-field-diagram-sestavy-mini .field-items .field-item img {
       margin-top: -23px !important; }
+body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field .field-label {
+  font-weight: bold;
+  color: #CFE3EC;
+  font-size: 12px;
+  line-height: 15px; }
+body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field ul {
+  overflow: hidden;
+  clear: both;
+  padding: 5px 0 5px 60px;
+  margin-left: 0px; }
+  body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field ul li {
+    line-height: 15px;
+    font-size: 11px; }
+body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field a {
+  line-height: 15px;
+  font-size: 11px; }
+body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field-name-field-uvodni-pripravny-postoj ul,
+body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field-name-field-prubezny-pripravny-postoj ul,
+body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field-name-field-zaverecny-pripravny-postoj ul {
+  padding: 0; }
+body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam {
+  margin: 30px 0 0 0; }
+  body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam .fieldset-wrapper {
+    padding: 0 60px; }
+    body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam .fieldset-wrapper .field-item {
+      display: block;
+      clear: both; }
+      body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam .fieldset-wrapper .field-item .content {
+        margin: 0;
+        font-size: 11px;
+        line-height: 15px; }
+      body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam .fieldset-wrapper .field-item .field-name-field-text-poznamky,
+      body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam .fieldset-wrapper .field-item .field-name-field-pohyb {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 5px;
+        font-size: 11px;
+        line-height: 15px; }
+        body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam .fieldset-wrapper .field-item .field-name-field-text-poznamky ul,
+        body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam .fieldset-wrapper .field-item .field-name-field-pohyb ul {
+          padding: 0 !important; }
+        body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam .fieldset-wrapper .field-item .field-name-field-text-poznamky a,
+        body.node-type-sestava .group-obsazene-techniky .group-poznamky-k-technikam .fieldset-wrapper .field-item .field-name-field-pohyb a {
+          display: block;
+          vertical-align: middle;
+          font-size: 11px;
+          line-height: 15px; }
 
 #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-seznam-sestav-block .content .view-content {
   text-align: center; }
@@ -1998,18 +2045,29 @@ body.page-node-335 #page-wrapper #page #main-wrapper #main #content .section .re
 .vocabulary-seznam-technik .field-name-field-korejsky-prepis-techniky,
 .vocabulary-seznam-technik .field-name-field-cesky-prepis-prip-tech,
 .vocabulary-seznam-technik .field-name-field-korejsk-prepis-prip-tech,
+.vocabulary-seznam-technik .field-name-field-cesky-prepis-pohybu,
+.vocabulary-seznam-technik .field-name-field-korejsky-prepis-pohybu,
 .vocabulary-seznam-pripravnych-postoju .field-name-field-cesky-prepis-techniky,
 .vocabulary-seznam-pripravnych-postoju .field-name-field-korejsky-prepis-techniky,
 .vocabulary-seznam-pripravnych-postoju .field-name-field-cesky-prepis-prip-tech,
-.vocabulary-seznam-pripravnych-postoju .field-name-field-korejsk-prepis-prip-tech {
+.vocabulary-seznam-pripravnych-postoju .field-name-field-korejsk-prepis-prip-tech,
+.vocabulary-seznam-pripravnych-postoju .field-name-field-cesky-prepis-pohybu,
+.vocabulary-seznam-pripravnych-postoju .field-name-field-korejsky-prepis-pohybu,
+.vocabulary-specialni-pohyb .field-name-field-cesky-prepis-techniky,
+.vocabulary-specialni-pohyb .field-name-field-korejsky-prepis-techniky,
+.vocabulary-specialni-pohyb .field-name-field-cesky-prepis-prip-tech,
+.vocabulary-specialni-pohyb .field-name-field-korejsk-prepis-prip-tech,
+.vocabulary-specialni-pohyb .field-name-field-cesky-prepis-pohybu,
+.vocabulary-specialni-pohyb .field-name-field-korejsky-prepis-pohybu {
   margin-bottom: 10px;
   background: #202020 !important;
   border: solid 2px #171717 !important;
   padding: 5px 10px; }
 .vocabulary-seznam-technik .flexslider,
-.vocabulary-seznam-pripravnych-postoju .flexslider {
+.vocabulary-seznam-pripravnych-postoju .flexslider,
+.vocabulary-specialni-pohyb .flexslider {
   margin: 0 0 10px 0 !important;
-  padding: 10px 82px;
+  padding: 10px 82px 10px 81px;
   background: #202020 !important;
   border: solid 2px #171717 !important;
   -webkit-border-radius: 0px;
@@ -2021,30 +2079,46 @@ body.page-node-335 #page-wrapper #page #main-wrapper #main #content .section .re
   -o-box-shadow: none;
   box-shadow: none; }
   .vocabulary-seznam-technik .flexslider .flex-viewport,
-  .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport {
+  .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport,
+  .vocabulary-specialni-pohyb .flexslider .flex-viewport {
     overflow: hidden; }
     .vocabulary-seznam-technik .flexslider .flex-viewport ul,
-    .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul {
+    .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul,
+    .vocabulary-specialni-pohyb .flexslider .flex-viewport ul {
       padding: 0;
       margin: 0; }
       .vocabulary-seznam-technik .flexslider .flex-viewport ul li,
-      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul li {
-        margin-right: 10px; }
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul li,
+      .vocabulary-specialni-pohyb .flexslider .flex-viewport ul li {
+        margin-right: 10px;
+        border: solid 1px #CFE3EC; }
         .vocabulary-seznam-technik .flexslider .flex-viewport ul li img,
-        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul li img {
+        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul li img,
+        .vocabulary-specialni-pohyb .flexslider .flex-viewport ul li img {
           cursor: pointer; }
+        .vocabulary-seznam-technik .flexslider .flex-viewport ul li:hover, .vocabulary-seznam-technik .flexslider .flex-viewport ul li:focus, .vocabulary-seznam-technik .flexslider .flex-viewport ul li:active,
+        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul li:hover,
+        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul li:focus,
+        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-viewport ul li:active,
+        .vocabulary-specialni-pohyb .flexslider .flex-viewport ul li:hover,
+        .vocabulary-specialni-pohyb .flexslider .flex-viewport ul li:focus,
+        .vocabulary-specialni-pohyb .flexslider .flex-viewport ul li:active {
+          border-color: #19C0DB; }
   .vocabulary-seznam-technik .flexslider .flex-direction-nav,
-  .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav {
+  .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav,
+  .vocabulary-specialni-pohyb .flexslider .flex-direction-nav {
     padding: 0;
     margin: 0; }
     .vocabulary-seznam-technik .flexslider .flex-direction-nav li a,
-    .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a {
+    .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a,
+    .vocabulary-specialni-pohyb .flexslider .flex-direction-nav li a {
       color: #19C0DB;
       text-align: center;
       opacity: 0.5 !important;
       display: block !important; }
       .vocabulary-seznam-technik .flexslider .flex-direction-nav li a:before,
-      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:before {
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:before,
+      .vocabulary-specialni-pohyb .flexslider .flex-direction-nav li a:before {
         font-family: "flexslider-icon";
         font-size: 40px;
         line-height: 1;
@@ -2053,19 +2127,26 @@ body.page-node-335 #page-wrapper #page #main-wrapper #main #content .section .re
       .vocabulary-seznam-technik .flexslider .flex-direction-nav li a:hover, .vocabulary-seznam-technik .flexslider .flex-direction-nav li a:active, .vocabulary-seznam-technik .flexslider .flex-direction-nav li a:focus,
       .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:hover,
       .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:active,
-      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:focus {
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a:focus,
+      .vocabulary-specialni-pohyb .flexslider .flex-direction-nav li a:hover,
+      .vocabulary-specialni-pohyb .flexslider .flex-direction-nav li a:active,
+      .vocabulary-specialni-pohyb .flexslider .flex-direction-nav li a:focus {
         opacity: 1 !important; }
       .vocabulary-seznam-technik .flexslider .flex-direction-nav li a.flex-prev,
-      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-prev {
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-prev,
+      .vocabulary-specialni-pohyb .flexslider .flex-direction-nav li a.flex-prev {
         left: 22px !important; }
         .vocabulary-seznam-technik .flexslider .flex-direction-nav li a.flex-prev:before,
-        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-prev:before {
+        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-prev:before,
+        .vocabulary-specialni-pohyb .flexslider .flex-direction-nav li a.flex-prev:before {
           content: '\f001'; }
       .vocabulary-seznam-technik .flexslider .flex-direction-nav li a.flex-next,
-      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-next {
+      .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-next,
+      .vocabulary-specialni-pohyb .flexslider .flex-direction-nav li a.flex-next {
         right: 22px !important; }
         .vocabulary-seznam-technik .flexslider .flex-direction-nav li a.flex-next:before,
-        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-next:before {
+        .vocabulary-seznam-pripravnych-postoju .flexslider .flex-direction-nav li a.flex-next:before,
+        .vocabulary-specialni-pohyb .flexslider .flex-direction-nav li a.flex-next:before {
           content: '\f002'; }
 
 body.page-taxonomy-term .content {
@@ -2098,9 +2179,14 @@ body.page-taxonomy-term .content {
     padding: 5px 10px; }
     body.page-taxonomy-term .content .node-teaser.node-sestava {
       text-align: center;
-      width: 100px;
+      width: auto;
+      min-width: 105px;
       margin-left: 0;
       margin-right: 5px; }
+      body.page-taxonomy-term .content .node-teaser.node-sestava h2 a {
+        overflow: visible;
+        text-overflow: inherit;
+        white-space: normal; }
     body.page-taxonomy-term .content .node-teaser h2 {
       padding: 0 !important;
       margin: 0 !important; }
