@@ -68,7 +68,8 @@ function taxonomy_single_tag_field_widget_form(&$form, &$form_state, $field, $in
     '#element_validate' => array('taxonomy_single_tag_autocomplete_validate'),
   );
 
-  return $element;
+  // Return in tid key, so we could replace values in validation stage
+  return array('tid' => $element);
 }
 
 /**
@@ -80,8 +81,12 @@ function taxonomy_single_tag_field_widget_form(&$form, &$form_state, $field, $in
 function taxonomy_single_tag_autocomplete_validate($element, &$form_state) {
   // Autocomplete widgets do not send their tids in the form, so we must detect
   // them here and process them independently.
-  $value = '';
-  if ($tag = $element['#value']) {
+  $value = array();
+  // Cause we are replacing whole delta item values,
+  // we need to set tid as empty string here. @see taxonomy_field_is_empty()
+  $value['tid'] = '';
+  $tag = trim($element['#value']);
+  if (!empty($tag)) {
     // Collect candidate vocabularies.
     $field = field_widget_field($element, $form_state);
     $vocabularies = array();
@@ -96,6 +101,12 @@ function taxonomy_single_tag_autocomplete_validate($element, &$form_state) {
     // otherwise, create a new 'autocreate' term for insert/update.
     if ($possibilities = taxonomy_term_load_multiple(array(), array('name' => trim($tag), 'vid' => array_keys($vocabularies)))) {
       $term = array_pop($possibilities);
+
+      // Copy weight from input to element, so they will be sorted. If we don't do it they
+      // won't change delta if weight changed.
+      if (!empty($form_state['input'][$element['#field_name']][$element['#language']][$element['#delta']]['_weight'])) {
+        $term->_weight = $form_state['input'][$element['#field_name']][$element['#language']][$element['#delta']]['_weight'];
+      }
     }
     else {
       $vocabulary = reset($vocabularies);
@@ -108,6 +119,9 @@ function taxonomy_single_tag_autocomplete_validate($element, &$form_state) {
     }
     $value = (array) $term;
   }
+  // Replace whole delta item values with normal term objects.
+  $element['#parents'] = array($element['#field_name'], $element['#language'], $element['#delta']);
+
   form_set_value($element, $value, $form_state);
 }
 
