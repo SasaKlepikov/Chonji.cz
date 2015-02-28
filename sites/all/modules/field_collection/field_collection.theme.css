@@ -1,5 +1,10 @@
 @CHARSET "UTF-8";
 
+.field-collection-container {
+  border-bottom: 1px solid #D3D7D9;
+  margin-bottom: 1em;
+}
+
 .field-collection-container .field-items .field-item {
   margin-bottom: 10px;
 }
