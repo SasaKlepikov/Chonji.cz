@@ -1957,7 +1957,8 @@ body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field ul {
   margin-left: 0px; }
   body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field ul li {
     line-height: 15px;
-    font-size: 11px; }
+    font-size: 11px;
+    color: #cfcfcf; }
 body.node-type-sestava .group-obsazene-techniky .fieldset-wrapper .field a {
   line-height: 15px;
   font-size: 11px; }
@@ -2219,5 +2220,68 @@ body.page-taxonomy-term .content {
             font-size: 0; }
     body.page-taxonomy-term .content .node-teaser:hover, body.page-taxonomy-term .content .node-teaser:active, body.page-taxonomy-term .content .node-teaser:focus {
       border-color: #CFE3EC !important; }
+
+.view-taekwon-do-encyklopedie-v-anglictine .view-content,
+.view-taekwon-do-encyklopedie-v-e-tin- .view-content,
+.view-dal-taekwon-do-podklady .view-content {
+  margin: 0 auto;
+  width: 600px; }
+  .view-taekwon-do-encyklopedie-v-anglictine .view-content .views-row,
+  .view-taekwon-do-encyklopedie-v-e-tin- .view-content .views-row,
+  .view-dal-taekwon-do-podklady .view-content .views-row {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 2px;
+    max-width: 110px;
+    cursor: pointer; }
+    .view-taekwon-do-encyklopedie-v-anglictine .view-content .views-row img,
+    .view-taekwon-do-encyklopedie-v-e-tin- .view-content .views-row img,
+    .view-dal-taekwon-do-podklady .view-content .views-row img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-color: #202020;
+      border: solid 2px #171717;
+      padding: 3px; }
+    .view-taekwon-do-encyklopedie-v-anglictine .view-content .views-row a,
+    .view-taekwon-do-encyklopedie-v-e-tin- .view-content .views-row a,
+    .view-dal-taekwon-do-podklady .view-content .views-row a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: transparent;
+      font-size: 0; }
+    .view-taekwon-do-encyklopedie-v-anglictine .view-content .views-row:hover img,
+    .view-taekwon-do-encyklopedie-v-e-tin- .view-content .views-row:hover img,
+    .view-dal-taekwon-do-podklady .view-content .views-row:hover img {
+      visibility: hidden; }
+
+.view-taekwon-do-encyklopedie-v-anglictine .view-content .views-row:hover a,
+.view-taekwon-do-encyklopedie-v-e-tin- .view-content .views-row:hover a {
+  width: 100px;
+  height: 100px;
+  border: solid 2px #171717;
+  padding: 3px;
+  background: url("../images/books/0.png") 3px 3px #202020 no-repeat; }
+
+.view-taekwon-do-encyklopedie-v-anglictine .view-content {
+  text-align: center; }
+
+.view-dal-taekwon-do-podklady .view-content .views-row .views-field-title {
+  font-weight: bold;
+  color: #CFE3EC; }
+.view-dal-taekwon-do-podklady .view-content .views-row:hover img {
+  display: none; }
+.view-dal-taekwon-do-podklady .view-content .views-row:hover .views-field-field-odkaz-dalsi-material {
+  width: 100px;
+  height: 100px;
+  border: solid 2px #171717;
+  padding: 3px;
+  background: url("../images/books/00.png") 3px 3px #202020 no-repeat; }
+.view-dal-taekwon-do-podklady .view-content .views-row:hover .views-field-title {
+  color: #19C0DB; }
 
 /*# sourceMappingURL=custom.css.map */

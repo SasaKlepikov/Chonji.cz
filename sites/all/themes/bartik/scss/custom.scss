@@ -2421,6 +2421,7 @@ body.node-type-sestava {
                     li {
                         line-height: 15px;
                         font-size: 11px;
+                        color: #cfcfcf;
                     }
                 }
                 a {
@@ -2696,6 +2697,92 @@ body.page-taxonomy-term {
             }
             &:hover,&:active,&:focus {
                 border-color: #CFE3EC !important;
+            }
+        }
+    }
+}
+
+
+.view-taekwon-do-encyklopedie-v-anglictine,
+.view-taekwon-do-encyklopedie-v-e-tin-,
+.view-dal-taekwon-do-podklady {
+    .view-content {
+        margin: 0 auto;
+        width: 600px;
+        .views-row {
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            margin: 2px;
+            max-width: 110px;
+            cursor: pointer;
+            img {
+                display: block;
+                width: 100px;
+                height: 100px;
+                background-color: #202020;
+                border: solid 2px #171717;
+                padding: 3px;
+            }
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                color: transparent;
+                font-size: 0;
+            }
+            &:hover {
+                img {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
+.view-taekwon-do-encyklopedie-v-anglictine,
+.view-taekwon-do-encyklopedie-v-e-tin- {
+    .view-content {
+        .views-row {
+            &:hover {
+                a {
+                    width: 100px;
+                    height: 100px;
+                    border: solid 2px #171717;
+                    padding: 3px;
+                    background: url('../images/books/0.png') 3px 3px #202020 no-repeat;
+                }
+            }
+        }
+    }
+}
+.view-taekwon-do-encyklopedie-v-anglictine {
+    .view-content {
+        text-align: center;
+    }
+}
+.view-dal-taekwon-do-podklady {
+    .view-content {
+        .views-row {
+            .views-field-title {
+                font-weight: bold;
+                color: #CFE3EC;
+            }
+            &:hover {
+                img {
+                    display: none;
+                }
+                .views-field-field-odkaz-dalsi-material {
+                    width: 100px;
+                    height: 100px;
+                    border: solid 2px #171717;
+                    padding: 3px;
+                    background: url('../images/books/00.png') 3px 3px #202020 no-repeat;
+                }
+                .views-field-title {
+                    color: $blue;
+                }
             }
         }
     }
