@@ -42,6 +42,11 @@ a.button {
     background: none;
     background-color: #303030; }
 
+#tiptip_content a {
+  text-decoration: none; }
+  #tiptip_content a:hover {
+    text-decoration: underline; }
+
 .views-exposed-form {
   padding: 0;
   margin: 0;
@@ -50,21 +55,62 @@ a.button {
   .views-exposed-form .views-exposed-widgets {
     padding: 0;
     margin: 0 auto;
-    display: table;
-    clear: both;
+    display: inline-block;
+    max-width: 700px;
+    text-align: left;
     position: relative; }
     .views-exposed-form .views-exposed-widgets .views-exposed-widget {
       padding: 0;
-      margin: 0;
-      display: table-cell;
+      margin: 0 5px 5px;
+      display: inline-block;
       vertical-align: middle;
       float: none; }
+      .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget {
+        margin: 0 !important; }
+        .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget input {
+          padding: 4px;
+          width: 188px;
+          background: #cfcfcf;
+          border-color: #777;
+          border-width: 2px;
+          border-style: solid;
+          font-family: sans-serif !important;
+          color: #222; }
+      .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select {
+        margin: 0 !important; }
       .views-exposed-form .views-exposed-widgets .views-exposed-widget input {
-        margin: 0 5px; }
+        margin: 0 !important;
+        border-radius: 0px;
+        height: auto;
+        box-shadow: none;
+        font-size: 12px !important; }
       .views-exposed-form .views-exposed-widgets .views-exposed-widget label {
-        font-size: 11px; }
+        font-size: 11px;
+        height: 18px;
+        line-height: 18px; }
+      .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit {
+        margin-top: 18px !important;
+        min-width: 92.5px;
+        background: #444; }
       .views-exposed-form .views-exposed-widgets .views-exposed-widget .description {
         font-size: 10px; }
+      .views-exposed-form .views-exposed-widgets .views-exposed-widget .container-inline-date .form-type-select {
+        margin: 0 5px 5px !important; }
+      .views-exposed-form .views-exposed-widgets .views-exposed-widget#edit-field-datum-narozen-value-wrapper {
+        border: solid 2px #171717;
+        background-color: #202020;
+        padding: 10px 5px 15px 5px;
+        float: right;
+        margin: 17px 0 0 0; }
+        .views-exposed-form .views-exposed-widgets .views-exposed-widget#edit-field-datum-narozen-value-wrapper label {
+          padding: 2px 0;
+          background: #303030;
+          margin-bottom: 5px;
+          border: solid 2px #171717; }
+        .views-exposed-form .views-exposed-widgets .views-exposed-widget#edit-field-datum-narozen-value-wrapper .form-item label {
+          background: #202020;
+          margin-bottom: 5px;
+          border: none; }
 
 .filter-help a {
   line-height: 16px;
@@ -99,15 +145,27 @@ a.button {
       background-color: #202020;
       border-color: #CFE3EC; }
     #content .form-type-select .chosen-drop .chosen-results li {
-      color: #CFE3EC !important; }
+      color: #CFE3EC; }
       #content .form-type-select .chosen-drop .chosen-results li.highlighted {
         background: none;
         color: #202020 !important;
         background-color: #19C0DB; }
+      #content .form-type-select .chosen-drop .chosen-results li.result-selected {
+        color: #545454; }
     #content .form-type-select .chosen-drop .chosen-results .no-results {
       border: solid 1px #CFE3EC;
       background-color: #202020;
       padding: 4px 5px; }
+  #content .form-type-select .chosen-choices {
+    padding: 2px 4px !important;
+    background: #cfcfcf !important;
+    border-color: #777;
+    border-width: 2px;
+    border-style: solid; }
+    #content .form-type-select .chosen-choices .search-choice {
+      padding: 2px 20px 2px 5px !important; }
+      #content .form-type-select .chosen-choices .search-choice span {
+        color: #333; }
 
 #page-wrapper {
   background: none !important;
@@ -152,8 +210,16 @@ a.button {
         width: 1030px; }
         #page-wrapper #page #header .region-header #block-views-header-slideshow-block {
           width: 860px;
+          max-height: 210px;
+          overflow: hidden;
           margin: 0;
           display: inline-block; }
+          #page-wrapper #page #header .region-header #block-views-header-slideshow-block h2.element-invisible {
+            display: none; }
+          #page-wrapper #page #header .region-header #block-views-header-slideshow-block ul {
+            list-style: none; }
+            #page-wrapper #page #header .region-header #block-views-header-slideshow-block ul li {
+              list-style: none; }
           #page-wrapper #page #header .region-header #block-views-header-slideshow-block .content {
             border: solid 2px #303030; }
           #page-wrapper #page #header .region-header #block-views-header-slideshow-block .bx-wrapper .bx-viewport {
@@ -352,6 +418,8 @@ a.button {
               text-decoration: underline; }
       #page-wrapper #page #featured #block-views-citace-block {
         width: 860px;
+        max-height: 20px;
+        overflow: hidden;
         text-align: left;
         margin: 2px auto 0 auto; }
         #page-wrapper #page #featured #block-views-citace-block .content {
@@ -470,7 +538,7 @@ a.button {
           text-align: left; }
           #page-wrapper #page #main-wrapper #main #content .section {
             padding: 0;
-            min-height: 850px;
+            min-height: 1024px;
             border: solid 2px #303030;
             background: #202020; }
             #page-wrapper #page #main-wrapper #main #content .section .tabs {
@@ -685,7 +753,10 @@ a.button {
               #page-wrapper #page #main-wrapper #main #sidebar-second #calendar-body .block-calendar .calendar-container .pretty-calendar-week .pretty-calendar-today .calendar-value {
                 color: #f3c26e !important; }
               #page-wrapper #page #main-wrapper #main #sidebar-second #calendar-body .block-calendar .calendar-container .pretty-calendar-week a div {
-                background: url("../images/bg-white.png") transparent repeat; }
+                background: url("../images/bg-white.png") transparent repeat;
+                text-decoration: none !important; }
+                #page-wrapper #page #main-wrapper #main #sidebar-second #calendar-body .block-calendar .calendar-container .pretty-calendar-week a div:hover {
+                  text-decoration: underline !important; }
               #page-wrapper #page #main-wrapper #main #sidebar-second #calendar-body .block-calendar .calendar-container .pretty-calendar-month {
                 position: relative;
                 padding: 0;
@@ -776,12 +847,47 @@ a.button {
                 background-color: #dcdcdc;
                 border-color: #19C0DB;
                 color: #303030 !important; }
+            #page-wrapper #page #main-wrapper #main #sidebar-second #block-search-form .form-type-select {
+              clear: both;
+              overflow: hidden; }
+              #page-wrapper #page #main-wrapper #main #sidebar-second #block-search-form .form-type-select label {
+                clear: both;
+                overflow: hidden;
+                display: block;
+                padding-left: 10px;
+                text-align: center;
+                font-size: 12px;
+                color: #CFE3EC;
+                font-weight: bold;
+                padding: 10px 0 3px 0; }
+              #page-wrapper #page #main-wrapper #main #sidebar-second #block-search-form .form-type-select .chosen-container {
+                margin-left: 10px;
+                width: 160px !important; }
+                #page-wrapper #page #main-wrapper #main #sidebar-second #block-search-form .form-type-select .chosen-container .chosen-single,
+                #page-wrapper #page #main-wrapper #main #sidebar-second #block-search-form .form-type-select .chosen-container .chosen-drop {
+                  background: none;
+                  background-color: #dcdcdc;
+                  color: #303030 !important;
+                  border: solid 1px #202020;
+                  -khtml-border-radius: 0px;
+                  -moz-border-radius: 0px;
+                  -webkit-border-radius: 0px;
+                  border-radius: 0px;
+                  font-size: 12px;
+                  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                  font-weight: bold; }
+            #page-wrapper #page #main-wrapper #main #sidebar-second #block-search-form .form-actions {
+              margin-top: 10px; }
           #page-wrapper #page #main-wrapper #main #sidebar-second #block-views-home-page-novinky-block-1 .content .item-list {
             text-align: left;
             margin-left: 10px;
             background-color: #202020;
             text-shadow: 0px 0px 10px #000000;
             border: solid 2px #303030; }
+            #page-wrapper #page #main-wrapper #main #sidebar-second #block-views-home-page-novinky-block-1 .content .item-list ul {
+              list-style: none; }
+              #page-wrapper #page #main-wrapper #main #sidebar-second #block-views-home-page-novinky-block-1 .content .item-list ul li {
+                list-style: none; }
             #page-wrapper #page #main-wrapper #main #sidebar-second #block-views-home-page-novinky-block-1 .content .item-list .views-field-type {
               margin-top: 5px;
               -webkit-box-shadow: 0px 0px 10px #000000;
@@ -819,6 +925,7 @@ a.button {
               left: 0;
               background-color: #202020;
               border: none;
+              height: 200px !important;
               -moz-box-shadow: none;
               -webkit-box-shadow: none;
               box-shadow: none;
@@ -857,9 +964,12 @@ a.button {
                 right: 0;
                 bottom: 0;
                 display: block; }
+              #page-wrapper #page #main-wrapper #main #sidebar-second #block-views-foto-video-galerie-block .view-content .bx-viewport:hover .views-field-title a {
+                text-decoration: underline; }
     #page-wrapper #page #footer-wrapper {
       padding: 0;
       background: none;
+      min-width: 1200px;
       text-align: center; }
       #page-wrapper #page #footer-wrapper .section {
         width: 860px;
@@ -871,6 +981,8 @@ a.button {
           margin: 0; }
           #page-wrapper #page #footer-wrapper .section #footer .region {
             margin: 0; }
+            #page-wrapper #page #footer-wrapper .section #footer .region #block-block-1 {
+              font-size: 12px; }
 
 .term-listing-heading {
   border-bottom: 1px solid #d3d7d9;
@@ -1312,7 +1424,11 @@ ul.flippy {
   border: solid 2px #171717;
   padding: 5px 10px; }
   .node #comments h2.title {
-    margin: 10px 0 30px 0; }
+    margin: 10px 0; }
+  .node #comments .comment {
+    padding-bottom: 10px;
+    border-bottom: solid 2px #d3d7d9;
+    margin-bottom: 10px; }
   .node #comments a.ckeditor_links {
     margin: 10px 0;
     display: inline-block;
@@ -1328,11 +1444,16 @@ ul.flippy {
     padding: 0 10px; }
   .node #comments label {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 18px;
     color: #CFE3EC;
     display: inline-block;
     float: none; }
+  .node #comments input {
+    background-color: #303030;
+    border: solid 2px #171717;
+    border-radius: 0px;
+    color: #fff; }
   .node #comments .form-item {
     display: table-row;
     vertical-align: middle; }
@@ -1345,6 +1466,153 @@ ul.flippy {
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px; }
+  .node #comments .comment .submitted .commenter-name,
+  .node #comments .comment .submitted .comment-permalink {
+    font-size: 12px !important; }
+  .node #comments .comment .submitted .comment-time {
+    font-size: 10px !important;
+    color: #CFE3EC; }
+  .node #comments .comment .comment-text h3 {
+    font-size: 14px;
+    margin: 5px 0; }
+  .node #comments .comment .comment-text .content {
+    margin: 0; }
+
+.comment-form .form-wrapper.collapse-processed {
+  border: none;
+  margin: 10px 0 32px 0;
+  padding-bottom: 0;
+  background-color: #3a3a3a;
+  -khtml-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  position: relative;
+  top: 0; }
+  .comment-form .form-wrapper.collapse-processed legend {
+    margin: 0;
+    border: none;
+    border: solid 1px #171717;
+    background-color: #3a3a3a;
+    -khtml-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0; }
+    .comment-form .form-wrapper.collapse-processed legend .fieldset-title {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      color: #CFE3EC !important;
+      text-shadow: none;
+      font-weight: bold;
+      padding-left: 15px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block; }
+      .comment-form .form-wrapper.collapse-processed legend .fieldset-title:hover, .comment-form .form-wrapper.collapse-processed legend .fieldset-title:active, .comment-form .form-wrapper.collapse-processed legend .fieldset-title:focus {
+        text-decoration: none; }
+    .comment-form .form-wrapper.collapse-processed legend:hover, .comment-form .form-wrapper.collapse-processed legend:active, .comment-form .form-wrapper.collapse-processed legend:focus {
+      background-color: #202020; }
+  .comment-form .form-wrapper.collapse-processed .fieldset-wrapper {
+    margin-top: 0px;
+    padding-top: 50px;
+    border: solid 1px #171717;
+    border-top: none; }
+    .comment-form .form-wrapper.collapse-processed .fieldset-wrapper .description {
+      margin-left: 125px;
+      margin-top: 5px; }
+.comment-form label {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #CFE3EC;
+  display: inline-block;
+  float: none; }
+.comment-form input {
+  background-color: #202020;
+  border: solid 2px #171717;
+  border-radius: 0px;
+  color: #fff; }
+.comment-form .field-name-comment-body .form-type-textarea label {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #CFE3EC;
+  display: block;
+  float: none;
+  clear: both; }
+.comment-form a.ckeditor_links {
+  margin: 10px 0;
+  display: inline-block;
+  padding: 5px 10px;
+  border: solid 2px #CFE3EC;
+  color: #CFE3EC !important;
+  background-color: #303030; }
+  .comment-form a.ckeditor_links:hover, .comment-form a.ckeditor_links:active, .comment-form a.ckeditor_links:focus {
+    color: #19C0DB !important;
+    border-color: #19C0DB;
+    text-decoration: none; }
+.comment-form .filter-wrapper {
+  border: solid 1px #171717;
+  background-color: #202020;
+  -khtml-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
+.comment-form .form-type-select {
+  overflow: visible !important; }
+.comment-form .comment-preview {
+  border: solid 1px #171717;
+  background-color: #202020;
+  padding: 5px; }
+  .comment-form .comment-preview .attribution .submitted .commenter-name,
+  .comment-form .comment-preview .attribution .submitted .comment-permalink {
+    font-size: 12px !important; }
+  .comment-form .comment-preview .attribution .submitted .comment-time {
+    font-size: 10px !important;
+    color: #CFE3EC; }
+  .comment-form .comment-preview .comment-text h3 {
+    font-size: 14px !important;
+    margin: 5px 0; }
+  .comment-form .comment-preview .comment-text .field-name-comment-body {
+    font-size: 12px !important; }
+.comment-form .node {
+  border: solid 1px #171717;
+  border-top-width: 5px;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #202020; }
+  .comment-form .node .field {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    clear: none;
+    margin: 5px 0;
+    font-size: 12px !important; }
+  .comment-form .node .field-type-image {
+    display: inline-block;
+    margin-right: 10px;
+    width: auto;
+    float: left; }
+    .comment-form .node .field-type-image .field-items {
+      display: block !important;
+      padding: 8px;
+      border: solid 1px #171717;
+      background-color: #303030;
+      -moz-box-shadow: inset 0px 0px 5px #000000;
+      -webkit-box-shadow: inset 0px 0px 5px #000000;
+      box-shadow: inset 0px 0px 5px #000000; }
+    .comment-form .node .field-type-image img {
+      margin: 0;
+      display: block;
+      vertical-align: middle;
+      border: solid 1px #171717; }
 
 body.page-ke-stazeni .view-ke-stazeni .views-field-field-soubor ol {
   list-style: none; }
@@ -1375,17 +1643,69 @@ body.page-mistri-taekwon-do #block-views-mistri-taekwon-do-block-1 .view-mistri-
 body.page-mistri-taekwon-do #block-views-mistri-taekwon-do-block-1 .view-mistri-taekwon-do .view-content .views-field .field-content {
   display: inline-block; }
 
-body.page-seznam-nasich-zaku #block-system-main .view-seznam-nasich-zaku .view-content tbody tr td.views-field-field-zak-zkousky .content {
-  margin: 0; }
-  body.page-seznam-nasich-zaku #block-system-main .view-seznam-nasich-zaku .view-content tbody tr td.views-field-field-zak-zkousky .content .field {
-    display: none; }
-  body.page-seznam-nasich-zaku #block-system-main .view-seznam-nasich-zaku .view-content tbody tr td.views-field-field-zak-zkousky .content .field-name-field-zkouska-technicky-stupen {
-    display: block;
+body.page-seznam-nasich-zaku #block-system-main .view-seznam-nasich-zaku .view-content tbody tr td.views-field-field-aktualni-pasek-zaka span {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px; }
+
+body.node-type-zak-skoly #block-system-main .group-tech-stupen {
+  padding-top: 15px; }
+  body.node-type-zak-skoly #block-system-main .group-tech-stupen h3 {
+    color: #CFE3EC;
+    font-size: 12px !important;
+    height: auto !important;
     margin: 0;
-    font-size: 12px; }
-    body.page-seznam-nasich-zaku #block-system-main .view-seznam-nasich-zaku .view-content tbody tr td.views-field-field-zak-zkousky .content .field-name-field-zkouska-technicky-stupen .links {
-      color: #fff;
-      font-size: 0.857em; }
+    padding-right: 3px;
+    font-weight: bold;
+    float: left; }
+body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka {
+  margin: 0; }
+  body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul {
+    display: block; }
+    body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li {
+      display: block;
+      padding: 0;
+      padding-right: 82px;
+      background: url("../images/belts.png") right top no-repeat; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-10 {
+        background-position: right top; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-9 {
+        background-position: right -20px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-8 {
+        background-position: right -40px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-7 {
+        background-position: right -60px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-6 {
+        background-position: right -80px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-5 {
+        background-position: right -100px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-4 {
+        background-position: right -120px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-3 {
+        background-position: right -140px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-2 {
+        background-position: right -160px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.kup-1 {
+        background-position: right -180px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.idan- {
+        background-position: right -200px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.iidan- {
+        background-position: right -220px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.iiidan- {
+        background-position: right -240px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.ivdan- {
+        background-position: right -260px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.vdan- {
+        background-position: right -280px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.vidan- {
+        background-position: right -300px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.viidan- {
+        background-position: right -320px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.viiidan- {
+        background-position: right -340px; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-aktualni-pasek-zaka ul li.ixdan- {
+        background-position: right -360px; }
 
 body.node-type-zak-skoly #block-system-main .field,
 body.node-type-vedeni-skoly #block-system-main .field {
@@ -1421,9 +1741,6 @@ body.node-type-zak-skoly #block-system-main .group-informace-vedouciho .field .f
 body.node-type-vedeni-skoly #block-system-main .group-osobni-udaje .field .field-label,
 body.node-type-vedeni-skoly #block-system-main .group-informace-vedouciho .field .field-label {
   color: #CFE3EC; }
-body.node-type-zak-skoly #block-system-main .field-name-field-zak-prijmeni,
-body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-prijmeni {
-  padding-top: 15px; }
 body.node-type-zak-skoly #block-system-main .field-name-field-zak-jmeno,
 body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-jmeno {
   margin-bottom: 5px; }
@@ -1468,108 +1785,108 @@ body.node-type-vedeni-skoly #block-system-main .field-name-field-pozice-vedoucih
 body.node-type-zak-skoly #block-system-main .group-vice-informaci,
 body.node-type-vedeni-skoly #block-system-main .group-vice-informaci {
   margin-top: 5px; }
-body.node-type-zak-skoly #block-system-main .group-informace h3,
-body.node-type-zak-skoly #block-system-main .group-vice-informaci h3,
-body.node-type-vedeni-skoly #block-system-main .group-informace h3,
-body.node-type-vedeni-skoly #block-system-main .group-vice-informaci h3 {
-  display: none; }
-body.node-type-zak-skoly #block-system-main .group-informace table,
-body.node-type-zak-skoly #block-system-main .group-vice-informaci table,
-body.node-type-vedeni-skoly #block-system-main .group-informace table,
-body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table {
-  width: auto !important;
-  margin: 0;
-  border: solid 1px #171717;
-  border-collapse: inherit;
-  border-right-width: 2px;
-  border-bottom-width: 2px; }
-  body.node-type-zak-skoly #block-system-main .group-informace table tr,
-  body.node-type-zak-skoly #block-system-main .group-vice-informaci table tr,
-  body.node-type-vedeni-skoly #block-system-main .group-informace table tr,
-  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tr {
-    border: none; }
-  body.node-type-zak-skoly #block-system-main .group-informace table thead tr th,
-  body.node-type-zak-skoly #block-system-main .group-informace table thead tr td,
-  body.node-type-zak-skoly #block-system-main .group-informace table tbody tr th,
-  body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td,
-  body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr th,
-  body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td,
-  body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr th,
-  body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td,
-  body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr th,
-  body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td,
-  body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr th,
-  body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td,
-  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr th,
-  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td,
-  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr th,
-  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td {
-    font-size: 12px !important;
-    border-color: #171717;
-    border-right-width: 0;
-    padding: 4px 15px; }
-  body.node-type-zak-skoly #block-system-main .group-informace table thead tr th,
-  body.node-type-zak-skoly #block-system-main .group-informace table tbody tr th,
-  body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr th,
-  body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr th,
-  body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr th,
-  body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr th,
-  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr th,
-  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr th {
-    white-space: nowrap;
-    background-color: #202020;
-    border-bottom: solid 1px #171717; }
-  body.node-type-zak-skoly #block-system-main .group-informace table thead tr td,
-  body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td,
-  body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td,
-  body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td,
-  body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td,
-  body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td,
-  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td,
-  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td {
-    background-color: #292929;
-    border-bottom-width: 0; }
-    body.node-type-zak-skoly #block-system-main .group-informace table thead tr td .date-display-remaining,
-    body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td .date-display-remaining,
-    body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td .date-display-remaining,
-    body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td .date-display-remaining,
-    body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td .date-display-remaining,
-    body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td .date-display-remaining,
-    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td .date-display-remaining,
-    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td .date-display-remaining {
-      white-space: nowrap; }
-      body.node-type-zak-skoly #block-system-main .group-informace table thead tr td .date-display-remaining strong,
-      body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td .date-display-remaining strong,
-      body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td .date-display-remaining strong,
-      body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td .date-display-remaining strong,
-      body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td .date-display-remaining strong,
-      body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td .date-display-remaining strong,
-      body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td .date-display-remaining strong,
-      body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td .date-display-remaining strong {
-        color: #ff9900; }
-    body.node-type-zak-skoly #block-system-main .group-informace table thead tr td.views-field .file,
-    body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td.views-field .file,
-    body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td.views-field .file,
-    body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td.views-field .file,
-    body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td.views-field .file,
-    body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td.views-field .file,
-    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td.views-field .file,
-    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td.views-field .file {
-      white-space: nowrap; }
-      body.node-type-zak-skoly #block-system-main .group-informace table thead tr td.views-field .file img,
-      body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td.views-field .file img,
-      body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td.views-field .file img,
-      body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td.views-field .file img,
-      body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td.views-field .file img,
-      body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td.views-field .file img,
-      body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td.views-field .file img,
-      body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td.views-field .file img {
-        vertical-align: middle; }
-body.node-type-zak-skoly #block-system-main .group-informace.group-informace2,
-body.node-type-zak-skoly #block-system-main .group-vice-informaci.group-informace2,
-body.node-type-vedeni-skoly #block-system-main .group-informace.group-informace2,
-body.node-type-vedeni-skoly #block-system-main .group-vice-informaci.group-informace2 {
-  margin-bottom: 5px; }
+body.node-type-zak-skoly #block-system-main .group-informace,
+body.node-type-zak-skoly #block-system-main .group-vice-informaci,
+body.node-type-vedeni-skoly #block-system-main .group-informace,
+body.node-type-vedeni-skoly #block-system-main .group-vice-informaci {
+  overflow: hidden; }
+  body.node-type-zak-skoly #block-system-main .group-informace h3,
+  body.node-type-zak-skoly #block-system-main .group-vice-informaci h3,
+  body.node-type-vedeni-skoly #block-system-main .group-informace h3,
+  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci h3 {
+    display: none; }
+  body.node-type-zak-skoly #block-system-main .group-informace table,
+  body.node-type-zak-skoly #block-system-main .group-vice-informaci table,
+  body.node-type-vedeni-skoly #block-system-main .group-informace table,
+  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table {
+    width: auto !important;
+    margin: 5px 0;
+    border: solid 1px #171717;
+    border-collapse: inherit;
+    border-right-width: 2px;
+    border-bottom-width: 2px; }
+    body.node-type-zak-skoly #block-system-main .group-informace table tr,
+    body.node-type-zak-skoly #block-system-main .group-vice-informaci table tr,
+    body.node-type-vedeni-skoly #block-system-main .group-informace table tr,
+    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tr {
+      border: none; }
+    body.node-type-zak-skoly #block-system-main .group-informace table thead tr th,
+    body.node-type-zak-skoly #block-system-main .group-informace table thead tr td,
+    body.node-type-zak-skoly #block-system-main .group-informace table tbody tr th,
+    body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td,
+    body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr th,
+    body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td,
+    body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr th,
+    body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td,
+    body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr th,
+    body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td,
+    body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr th,
+    body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td,
+    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr th,
+    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td,
+    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr th,
+    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td {
+      font-size: 12px !important;
+      border-color: #171717;
+      border-right-width: 0;
+      padding: 4px 15px; }
+    body.node-type-zak-skoly #block-system-main .group-informace table thead tr th,
+    body.node-type-zak-skoly #block-system-main .group-informace table tbody tr th,
+    body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr th,
+    body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr th,
+    body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr th,
+    body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr th,
+    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr th,
+    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr th {
+      white-space: nowrap;
+      background-color: #202020;
+      border-bottom: solid 1px #171717; }
+    body.node-type-zak-skoly #block-system-main .group-informace table thead tr td,
+    body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td,
+    body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td,
+    body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td,
+    body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td,
+    body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td,
+    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td,
+    body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td {
+      background-color: #292929;
+      border-bottom-width: 0; }
+      body.node-type-zak-skoly #block-system-main .group-informace table thead tr td .date-display-remaining,
+      body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td .date-display-remaining,
+      body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td .date-display-remaining,
+      body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td .date-display-remaining,
+      body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td .date-display-remaining,
+      body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td .date-display-remaining,
+      body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td .date-display-remaining,
+      body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td .date-display-remaining {
+        white-space: nowrap; }
+        body.node-type-zak-skoly #block-system-main .group-informace table thead tr td .date-display-remaining strong,
+        body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td .date-display-remaining strong,
+        body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td .date-display-remaining strong,
+        body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td .date-display-remaining strong,
+        body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td .date-display-remaining strong,
+        body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td .date-display-remaining strong,
+        body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td .date-display-remaining strong,
+        body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td .date-display-remaining strong {
+          color: #ff9900; }
+      body.node-type-zak-skoly #block-system-main .group-informace table thead tr td.views-field .file,
+      body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td.views-field .file,
+      body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td.views-field .file,
+      body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td.views-field .file,
+      body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td.views-field .file,
+      body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td.views-field .file,
+      body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td.views-field .file,
+      body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td.views-field .file {
+        white-space: nowrap; }
+        body.node-type-zak-skoly #block-system-main .group-informace table thead tr td.views-field .file img,
+        body.node-type-zak-skoly #block-system-main .group-informace table tbody tr td.views-field .file img,
+        body.node-type-zak-skoly #block-system-main .group-vice-informaci table thead tr td.views-field .file img,
+        body.node-type-zak-skoly #block-system-main .group-vice-informaci table tbody tr td.views-field .file img,
+        body.node-type-vedeni-skoly #block-system-main .group-informace table thead tr td.views-field .file img,
+        body.node-type-vedeni-skoly #block-system-main .group-informace table tbody tr td.views-field .file img,
+        body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td.views-field .file img,
+        body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td.views-field .file img {
+          vertical-align: middle; }
 body.node-type-zak-skoly #block-system-main .field-type-field-collection,
 body.node-type-vedeni-skoly #block-system-main .field-type-field-collection {
   border: solid 1px #171717;
@@ -1782,52 +2099,206 @@ body.page-seznam-nasich-zaku .view-seznam-nasich-zaku ul,
 body.page-seznam-nasich-zaku .view-seznam-nasich-zaku li,
 body.page-seznam-nasich-zaku .view-seznam-nasich-zaku span,
 body.page-seznam-nasich-zaku .view-seznam-nasich-zaku div,
-body.page-seznam-nasich-zaku .view-seznam-nasich-zaku h3 {
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku h3,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku ul,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku li,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku div,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku h3 {
   font-size: 12px !important;
   height: auto !important;
   margin: 0;
   color: #fff; }
-body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen {
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky ul,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka ul,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky ul,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka ul {
+  padding: 0 !important;
+  list-style: none;
+  margin: 0; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka .views-field {
   padding-left: 85px;
-  background: url("../images/belts.png") left top no-repeat; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-10 {
-    background-position: left top; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-9 {
-    background-position: left -20px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-8 {
-    background-position: left -40px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-7 {
-    background-position: left -60px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-6 {
-    background-position: left -80px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-5 {
-    background-position: left -100px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-4 {
-    background-position: left -120px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-3 {
-    background-position: left -140px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-2 {
-    background-position: left -160px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.kup-1 {
-    background-position: left -180px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.idan- {
-    background-position: left -200px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.iidan- {
-    background-position: left -220px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.iiidan- {
-    background-position: left -240px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.ivdan- {
-    background-position: left -260px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.vdan- {
-    background-position: left -280px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.vidan- {
-    background-position: left -300px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.viidan- {
-    background-position: left -320px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.viiidan- {
-    background-position: left -340px; }
-  body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen.ixdan- {
-    background-position: left -360px; }
+  background: url("../images/belts.png") left -380px no-repeat; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-10 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-10 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-10 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-10 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-10 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-10 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-10 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-10 .views-field {
+  background-position: left top; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-9 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-9 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-9 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-9 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-9 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-9 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-9 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-9 .views-field {
+  background-position: left -20px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-8 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-8 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-8 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-8 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-8 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-8 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-8 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-8 .views-field {
+  background-position: left -40px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-7 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-7 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-7 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-7 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-7 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-7 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-7 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-7 .views-field {
+  background-position: left -60px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-6 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-6 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-6 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-6 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-6 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-6 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-6 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-6 .views-field {
+  background-position: left -80px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-5 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-5 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-5 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-5 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-5 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-5 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-5 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-5 .views-field {
+  background-position: left -100px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-4 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-4 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-4 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-4 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-4 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-4 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-4 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-4 .views-field {
+  background-position: left -120px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-3 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-3 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-3 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-3 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-3 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-3 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-3 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-3 .views-field {
+  background-position: left -140px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-2 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-2 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-2 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-2 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-2 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-2 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-2 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-2 .views-field {
+  background-position: left -160px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-1 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-1 .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-1 span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-1 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-1 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.kup-1 .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-1 span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.kup-1 .views-field {
+  background-position: left -180px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.idan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.idan- .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.idan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.idan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.idan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.idan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.idan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.idan- .views-field {
+  background-position: left -200px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.iidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.iidan- .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.iidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.iidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.iidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.iidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.iidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.iidan- .views-field {
+  background-position: left -220px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.iiidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.iiidan- .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.iiidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.iiidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.iiidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.iiidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.iiidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.iiidan- .views-field {
+  background-position: left -240px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.ivdan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.ivdan- .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.ivdan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.ivdan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.ivdan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.ivdan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.ivdan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.ivdan- .views-field {
+  background-position: left -260px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.vdan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.vdan- .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.vdan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.vdan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.vdan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.vdan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.vdan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.vdan- .views-field {
+  background-position: left -280px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.vidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.vidan- .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.vidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.vidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.vidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.vidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.vidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.vidan- .views-field {
+  background-position: left -300px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.viidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.viidan- .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.viidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.viidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.viidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.viidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.viidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.viidan- .views-field {
+  background-position: left -320px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.viiidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.viiidan- .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.viiidan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.viiidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.viiidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.viiidan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.viiidan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.viiidan- .views-field {
+  background-position: left -340px; }
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.ixdan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.ixdan- .views-field,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.ixdan- span,
+body.page-seznam-nasich-zaku .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.ixdan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.ixdan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-zak-zkousky.ixdan- .views-field,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.ixdan- span,
+body.page-seznam-nasich-zaku-vedouci .view-seznam-nasich-zaku .view-content .views-field-field-aktualni-pasek-zaka.ixdan- .views-field {
+  background-position: left -360px; }
 
 body.node-type-sestava .group-informace-o-sestave .fieldset-wrapper,
 body.node-type-sestava .group-vyznam-sestavy .fieldset-wrapper,
@@ -2263,7 +2734,7 @@ body.page-taxonomy-term .content {
 .view-taekwon-do-encyklopedie-v-e-tin- .view-content .views-row:hover a {
   width: 100px;
   height: 100px;
-  border: solid 2px #171717;
+  border: solid 2px #CFE3EC;
   padding: 3px;
   background: url("../images/books/0.png") 3px 3px #202020 no-repeat; }
 
@@ -2271,6 +2742,7 @@ body.page-taxonomy-term .content {
   text-align: center; }
 
 .view-dal-taekwon-do-podklady .view-content .views-row .views-field-title {
+  padding-top: 5px;
   font-weight: bold;
   color: #CFE3EC; }
 .view-dal-taekwon-do-podklady .view-content .views-row:hover img {
@@ -2278,10 +2750,186 @@ body.page-taxonomy-term .content {
 .view-dal-taekwon-do-podklady .view-content .views-row:hover .views-field-field-odkaz-dalsi-material {
   width: 100px;
   height: 100px;
-  border: solid 2px #171717;
+  border: solid 2px #CFE3EC;
   padding: 3px;
   background: url("../images/books/00.png") 3px 3px #202020 no-repeat; }
 .view-dal-taekwon-do-podklady .view-content .views-row:hover .views-field-title {
   color: #19C0DB; }
+
+#page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-hlavn-novinky-block .content .view-hlavn-novinky .view-content .views-row {
+  border: solid 2px #171717;
+  background-color: #202020;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 10px; }
+  #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-hlavn-novinky-block .content .view-hlavn-novinky .view-content .views-row .views-field-title h3 {
+    margin: 0 0 10px 0; }
+    #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-hlavn-novinky-block .content .view-hlavn-novinky .view-content .views-row .views-field-title h3 a {
+      color: #f3c26e;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: solid 1px #f3c26e; }
+      #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-hlavn-novinky-block .content .view-hlavn-novinky .view-content .views-row .views-field-title h3 a:hover {
+        text-decoration: none;
+        border-color: transparent; }
+  #page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-hlavn-novinky-block .content .view-hlavn-novinky .view-content .views-row .views-field-body {
+    padding: 0 15px; }
+
+#page-wrapper #page #main-wrapper #main #content .section .region-content .block .search-form .search-advanced {
+  border: solid 1px #171717;
+  margin: 10px 0 32px 0;
+  background-color: #3a3a3a;
+  -khtml-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  position: relative;
+  top: 0;
+  padding: 0; }
+  #page-wrapper #page #main-wrapper #main #content .section .region-content .block .search-form .search-advanced legend {
+    background-color: #202020;
+    margin: 0;
+    border: none;
+    border-bottom: solid 1px #171717;
+    background-color: #3a3a3a;
+    -khtml-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0; }
+    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .search-form .search-advanced legend .fieldset-title {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #CFE3EC !important;
+      text-shadow: none;
+      font-weight: bold;
+      padding-left: 15px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      text-decoration: none; }
+    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .search-form .search-advanced legend:hover {
+      background-color: #202020; }
+      #page-wrapper #page #main-wrapper #main #content .section .region-content .block .search-form .search-advanced legend:hover .fieldset-title {
+        color: #19C0DB !important;
+        text-decoration: none; }
+  #page-wrapper #page #main-wrapper #main #content .section .region-content .block .search-form .search-advanced .fieldset-wrapper {
+    margin-top: 35px; }
+  #page-wrapper #page #main-wrapper #main #content .section .region-content .block .search-form .search-advanced.collapsed {
+    height: 2em; }
+    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .search-form .search-advanced.collapsed legend {
+      background-color: #202020; }
+
+body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block {
+  position: relative; }
+  body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-exposed-form .views-exposed-widgets {
+    text-align: center; }
+    body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+      display: inline-block; }
+      body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-reset-button, body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
+        float: right; }
+      body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
+        margin-left: 15px; }
+  body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-table {
+    position: relative;
+    margin-left: calc(-100% + 235px);
+    z-index: 15; }
+  body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .sticky-header {
+    z-index: 16;
+    margin-left: 1px; }
+    body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .sticky-header th {
+      border-color: #171717;
+      border-bottom-style: solid; }
+  @media only screen and (max-width: 1910px) {
+    body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-table {
+      margin-left: calc(-100% + 335px); } }
+  @media only screen and (max-width: 1710px) {
+    body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-table {
+      margin-left: calc(-100% + 435px); } }
+  @media only screen and (max-width: 1510px) {
+    body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-table {
+      margin-left: calc(-100% + 535px); } }
+  @media only screen and (max-width: 1310px) {
+    body.page-seznam-nasich-zaku-vedouci #page-wrapper #page #main-wrapper #main #content .section .region-content .block .views-table {
+      margin-left: calc(-50% + 190px); } }
+
+body.node-type-akce #page-wrapper #page #main-wrapper #main #content .section .region-content .field {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+  clear: none;
+  margin: 5px 0;
+  font-size: 12px !important; }
+  body.node-type-akce #page-wrapper #page #main-wrapper #main #content .section .region-content .field h3,
+  body.node-type-akce #page-wrapper #page #main-wrapper #main #content .section .region-content .field ul,
+  body.node-type-akce #page-wrapper #page #main-wrapper #main #content .section .region-content .field li {
+    font-size: 12px !important; }
+body.node-type-akce #page-wrapper #page #main-wrapper #main #content .section .region-content .field-name-field-obrazek-k-akci {
+  display: inline-block;
+  margin-right: 10px;
+  width: auto;
+  float: left; }
+  body.node-type-akce #page-wrapper #page #main-wrapper #main #content .section .region-content .field-name-field-obrazek-k-akci .field-items {
+    display: block !important;
+    padding: 8px;
+    border: solid 1px #171717;
+    background-color: #303030;
+    -moz-box-shadow: inset 0px 0px 5px #000000;
+    -webkit-box-shadow: inset 0px 0px 5px #000000;
+    box-shadow: inset 0px 0px 5px #000000; }
+    body.node-type-akce #page-wrapper #page #main-wrapper #main #content .section .region-content .field-name-field-obrazek-k-akci .field-items img {
+      margin: 0;
+      display: block;
+      vertical-align: middle;
+      border: solid 1px #171717; }
+
+body.page-node #page-wrapper #page #main-wrapper #main #content .section .region-content .content .content ul.flippy {
+  margin-bottom: 10px; }
+
+body.page-user #block-system-main {
+  clear: both;
+  overflow: hidden; }
+  body.page-user #block-system-main .profile .user-picture {
+    display: inline-block;
+    float: left; }
+    body.page-user #block-system-main .profile .user-picture a {
+      display: block !important;
+      padding: 8px;
+      -moz-box-shadow: inset 0px 0px 5px #000000;
+      -webkit-box-shadow: inset 0px 0px 5px #000000;
+      box-shadow: inset 0px 0px 5px #000000;
+      border: solid 1px #171717;
+      background-color: #303030; }
+      body.page-user #block-system-main .profile .user-picture a img {
+        margin: 0;
+        border: solid 1px #171717;
+        display: block;
+        vertical-align: middle; }
+  body.page-user #block-system-main .profile .field {
+    display: block;
+    width: 70%; }
+    body.page-user #block-system-main .profile .field .field-label,
+    body.page-user #block-system-main .profile .field .field-items {
+      display: inline-block; }
+    body.page-user #block-system-main .profile .field .field-label {
+      margin-right: 5px; }
+  body.page-user #block-system-main .profile h3 {
+    display: block;
+    margin-left: 132px; }
+
+.view-display-id-page_1 .views-field {
+  white-space: nowrap; }
+  .view-display-id-page_1 .views-field .item-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .view-display-id-page_1 .views-field .item-list ul li {
+      display: block;
+      white-space: nowrap; }
 
 /*# sourceMappingURL=custom.css.map */

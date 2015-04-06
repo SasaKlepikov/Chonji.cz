@@ -3,10 +3,10 @@
 
         $('.flexslider .flex-viewport .slides li img').each(function () {
             $(this).addClass('tech-gal');
-            $(this).attr('href',$(this).attr('src'));
+            $(this).attr('href', $(this).attr('src'));
             /*$(this).click(function () {
-                $(this).colorbox({href: $(this).attr('src'), rel: 'tech-gal'});
-            });*/
+             $(this).colorbox({href: $(this).attr('src'), rel: 'tech-gal'});
+             });*/
         });
         $('.flexslider .flex-viewport .slides li img').colorbox({rel: 'tech-gal', current: false});
 
@@ -69,9 +69,25 @@
                 $(this).addClass(NewClassKonstruktor);
             });
         }
-        if ($('body.page-seznam-nasich-zaku')) {
-            $('body.page-seznam-nasich-zaku .view-seznam-nasich-zaku table tbody tr .views-field-field-zak-zkousky .field-name-field-zkouska-technicky-stupen').each(function () {
-                var NewClass = $(this).find('ul.links li').text();
+        if ($('body.page-seznam-nasich-zaku') || $('body.page-seznam-nasich-zaku-vedouci')) {
+            $(this).find('.view-seznam-nasich-zaku table tbody tr .views-field-field-zak-zkousky').each(function () {
+                var NewClass = $(this).find('.field-content').text();
+                var NewClassNumbers = NewClass.replace(/[^0-9]/g, "");
+                var NewClassLetters = NewClass.replace(/[^a-zA-Z]/g, "").toLowerCase();
+                var NewClassKonstruktor = NewClassLetters + '-' + NewClassNumbers;
+                $(this).addClass(NewClassKonstruktor);
+            });
+            $(this).find('.view-seznam-nasich-zaku table tbody tr .views-field-field-aktualni-pasek-zaka').each(function () {
+                var NewClass = $(this).text();
+                var NewClassNumbers = NewClass.replace(/[^0-9]/g, "");
+                var NewClassLetters = NewClass.replace(/[^a-zA-Z]/g, "").toLowerCase();
+                var NewClassKonstruktor = NewClassLetters + '-' + NewClassNumbers;
+                $(this).addClass(NewClassKonstruktor);
+            });
+        }
+        if ($('body.node-type-zak-skoly')) {
+            $('body.node-type-zak-skoly .field-name-field-aktualni-pasek-zaka ul.links li').each(function () {
+                var NewClass = $(this).text();
                 var NewClassNumbers = NewClass.replace(/[^0-9]/g, "");
                 var NewClassLetters = NewClass.replace(/[^a-zA-Z]/g, "").toLowerCase();
                 var NewClassKonstruktor = NewClassLetters + '-' + NewClassNumbers;

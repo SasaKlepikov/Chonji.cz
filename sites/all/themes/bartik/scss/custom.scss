@@ -61,6 +61,14 @@ a.button {
         background-color: $dark_gray;
     }
 }
+#tiptip_content {
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 .views-exposed-form {
     padding: 0;
     margin: 0;
@@ -69,23 +77,76 @@ a.button {
     .views-exposed-widgets {
         padding: 0;
         margin: 0 auto;
-        display: table;
-        clear: both;
+        display: inline-block;
+        max-width: 700px;
+        text-align: left;
         position: relative;
         .views-exposed-widget {
             padding: 0;
-            margin: 0;
-            display: table-cell;
+            margin: 0 5px 5px;
+            display: inline-block;
             vertical-align: middle;
             float: none;
+            .views-widget {
+                margin: 0 !important;
+                input {
+                    padding: 4px;
+                    width: 188px;
+                    background: #cfcfcf;
+                    border-color: #777;
+                    border-width: 2px;
+                    border-style: solid;
+                    font-family: sans-serif !important;
+                    color: #222;
+                }
+            }
+            .form-type-select {
+                margin: 0 !important;
+            }
             input {
-                margin: 0 5px;
+                margin: 0 !important;
+                border-radius: 0px;
+                height: auto;
+                box-shadow: none;
+                font-size: 12px !important;
             }
             label {
                 font-size: 11px;
+                height: 18px;
+                line-height: 18px;
+            }
+            .form-submit {
+                margin-top: 18px !important;
+                min-width: 92.5px;
+                background: #444;
             }
             .description {
                 font-size: 10px;
+            }
+            .container-inline-date {
+                .form-type-select {
+                    margin: 0 5px 5px !important;
+                }
+            }
+            &#edit-field-datum-narozen-value-wrapper {
+                border: solid 2px #171717;
+                background-color: #202020;
+                padding: 10px 5px 15px 5px;
+                float: right;
+                margin: 17px 0 0 0;
+                label {
+                    padding: 2px 0;
+                    background: #303030;
+                    margin-bottom: 5px;
+                    border: solid 2px #171717;
+                }
+                .form-item {
+                    label {
+                        background: #202020;
+                        margin-bottom: 5px;
+                        border: none;
+                    }
+                }
             }
         }
     }
@@ -131,17 +192,33 @@ a.button {
             }
             .chosen-results {
                 li {
-                    color: #CFE3EC !important;
+                    color: #CFE3EC;
                     &.highlighted {
                         background: none;
                         color: $gray !important;
                         background-color: $blue;
+                    }
+                    &.result-selected {
+                        color: #545454;
                     }
                 }
                 .no-results {
                     border: solid 1px #CFE3EC;
                     background-color: $gray;
                     padding: 4px 5px;
+                }
+            }
+        }
+        .chosen-choices {
+            padding: 2px 4px !important;
+            background: #cfcfcf !important;
+            border-color: #777;
+            border-width: 2px;
+            border-style: solid;
+            .search-choice {
+                padding: 2px 20px 2px 5px !important;
+                span {
+                    color: #333;
                 }
             }
         }
@@ -194,8 +271,19 @@ a.button {
                 width: ($main_size - $left_size);
                 #block-views-header-slideshow-block {
                     width: $center_size;
+                    max-height: 210px;
+                    overflow: hidden;
                     margin: 0;
                     display: inline-block;
+                    h2.element-invisible {
+                        display: none;
+                    }
+                    ul {
+                        list-style: none;
+                        li {
+                            list-style: none;
+                        }
+                    }
                     .content {
                         border: solid 2px $dark_gray;
                     }
@@ -438,6 +526,8 @@ a.button {
             }
             #block-views-citace-block {
                 width: $center_size;
+                max-height: 20px;
+                overflow: hidden;
                 text-align: left;
                 margin: 2px auto 0 auto;
                 .content {
@@ -585,7 +675,7 @@ a.button {
                     text-align: left;
                     .section {
                         padding: 0;
-                        min-height: 850px;
+                        min-height: 1024px;
                         border: solid 2px $dark_gray;
                         background: $gray;
                         .tabs {
@@ -854,6 +944,10 @@ a.button {
                                 }
                                 .pretty-calendar-week a div {
                                     background: url('../images/bg-white.png') transparent repeat;
+                                    text-decoration: none !important;
+                                    &:hover {
+                                        text-decoration: underline !important;
+                                    }
                                 }
                                 .pretty-calendar-month {
                                     position: relative;
@@ -970,6 +1064,42 @@ a.button {
                                 }
                             }
                         }
+                        .form-type-select {
+                            clear: both;
+                            overflow: hidden;
+                            label {
+                                clear: both;
+                                overflow: hidden;
+                                display: block;
+                                padding-left: 10px;
+                                text-align: center;
+                                font-size: 12px;
+                                color: #CFE3EC;
+                                font-weight: bold;
+                                padding: 10px 0 3px 0;
+                            }
+                            .chosen-container {
+                                margin-left: 10px;
+                                width: $right_size - 10px !important;
+                                .chosen-single,
+                                .chosen-drop {
+                                    background: none;
+                                    background-color: #dcdcdc;
+                                    color: #303030 !important;
+                                    border: solid 1px #202020;
+                                    -khtml-border-radius: 0px;
+                                    -moz-border-radius: 0px;
+                                    -webkit-border-radius: 0px;
+                                    border-radius: 0px;
+                                    font-size: 12px;
+                                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        .form-actions {
+                            margin-top: 10px;
+                        }
                     }
                     #block-views-home-page-novinky-block-1 {
                         .content {
@@ -979,6 +1109,12 @@ a.button {
                                 background-color: $gray;
                                 text-shadow: 0px 0px 10px #000000;
                                 border: solid 2px $dark_gray;
+                                ul {
+                                    list-style: none;
+                                    li {
+                                        list-style: none;
+                                    }
+                                }
                                 .views-field-type {
                                     margin-top: 5px;
                                     -webkit-box-shadow: 0px 0px 10px #000000;
@@ -1027,6 +1163,7 @@ a.button {
                                 left: 0;
                                 background-color: $gray;
                                 border: none;
+                                height: 200px !important;
                                 -moz-box-shadow: none;
                                 -webkit-box-shadow: none;
                                 box-shadow: none;
@@ -1078,6 +1215,13 @@ a.button {
                                         display: block;
                                     }
                                 }
+                                &:hover {
+                                    .views-field-title {
+                                        a {
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -1087,6 +1231,7 @@ a.button {
         #footer-wrapper {
             padding: 0;
             background: none;
+            min-width: $center_size + $left_size + $right_size;
             text-align: center;
             .section {
                 width: $center_size;
@@ -1098,6 +1243,9 @@ a.button {
                     margin: 0;
                     .region {
                         margin: 0;
+                        #block-block-1 {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -1658,7 +1806,12 @@ ul.flippy {
         border: solid 2px #171717;
         padding: 5px 10px;
         h2.title {
-            margin: 10px 0 30px 0;
+            margin: 10px 0;
+        }
+        .comment {
+            padding-bottom: 10px;
+            border-bottom: solid 2px #d3d7d9;
+            margin-bottom: 10px;
         }
         a.ckeditor_links {
             margin: 10px 0;
@@ -1680,11 +1833,17 @@ ul.flippy {
         }
         label {
             font-family: $font_family;
-            font-size: 13px;
+            font-size: 12px;
             line-height: 18px;
             color: #CFE3EC;
             display: inline-block;
             float: none;
+        }
+        input {
+            background-color: #303030;
+            border: solid 2px #171717;
+            border-radius: 0px;
+            color: #fff;
         }
         .form-item {
             display: table-row;
@@ -1701,6 +1860,205 @@ ul.flippy {
                 -moz-border-radius: 0px;
                 -webkit-border-radius: 0px;
                 border-radius: 0px;
+            }
+        }
+        .comment {
+            .submitted {
+                .commenter-name,
+                .comment-permalink {
+                    font-size: 12px !important;
+                }
+                .comment-time {
+                    font-size: 10px !important;
+                    color: #CFE3EC;
+                }
+            }
+            .comment-text {
+                h3 {
+                    font-size: 14px;
+                    margin: 5px 0;
+                }
+                .content {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+.comment-form {
+    .form-wrapper.collapse-processed {
+        border: none;
+        margin: 10px 0 32px 0;
+        padding-bottom: 0;
+        background-color: #3a3a3a;
+        -khtml-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        position: relative;
+        top: 0;
+        legend {
+            margin: 0;
+            border: none;
+            border: solid 1px #171717;
+            background-color: #3a3a3a;
+            -khtml-border-radius: 0px;
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 0px;
+            border-radius: 0px;
+            z-index: 10;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            .fieldset-title {
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                color: #CFE3EC !important;
+                text-shadow: none;
+                font-weight: bold;
+                padding-left: 15px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                &:hover,
+                    &:active,
+                    &:focus {
+                    text-decoration: none;
+                }
+            }
+
+            &:hover,
+                &:active,
+                &:focus {
+                background-color: #202020;
+            }
+        }
+        .fieldset-wrapper {
+            margin-top: 0px;
+            padding-top: 50px;
+            border: solid 1px #171717;
+            border-top: none;
+            .description {
+                margin-left: 125px;
+                margin-top: 5px;
+            }
+        }
+    }
+    label {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        color: #CFE3EC;
+        display: inline-block;
+        float: none;
+    }
+    input {
+        background-color: #202020;
+        border: solid 2px #171717;
+        border-radius: 0px;
+        color: #fff;
+    }
+    .field-name-comment-body {
+        .form-type-textarea {
+            label {
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 12px;
+                line-height: 18px;
+                color: #CFE3EC;
+                display: block;
+                float: none;
+                clear: both;
+            }
+        }
+    }
+    a.ckeditor_links {
+        margin: 10px 0;
+        display: inline-block;
+        padding: 5px 10px;
+        border: solid 2px #CFE3EC;
+        color: #CFE3EC !important;
+        background-color: #303030;
+        &:hover,
+            &:active,
+            &:focus {
+            color: $blue !important;
+            border-color: $blue;
+            text-decoration: none;
+        }
+    }
+    .filter-wrapper {
+        border: solid 1px #171717;
+        background-color: #202020;
+        -khtml-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+    }
+    .form-type-select {
+        overflow: visible !important;
+    }
+    .comment-preview {
+        border: solid 1px #171717;
+        background-color: #202020;
+        padding: 5px;
+        .attribution {
+            .submitted {
+                .commenter-name,
+                .comment-permalink {
+                    font-size: 12px !important;
+                }
+                .comment-time {
+                    font-size: 10px !important;
+                    color: #CFE3EC;
+                }
+            }
+        }
+        .comment-text {
+            h3 {
+                font-size: 14px !important;
+                margin: 5px 0;
+            }
+            .field-name-comment-body {
+                font-size: 12px !important;
+            }
+        }
+    }
+    .node {
+        border: solid 1px #171717;
+        border-top-width: 5px;
+        margin-top: 40px;
+        padding: 10px;
+        background-color: #202020;
+        .field {
+            display: inline-block;
+            width: 70%;
+            vertical-align: top;
+            clear: none;
+            margin: 5px 0;
+            font-size: 12px !important;
+        }
+        .field-type-image {
+            display: inline-block;
+            margin-right: 10px;
+            width: auto;
+            float: left;
+            .field-items {
+                display: block !important;
+                padding: 8px;
+                border: solid 1px #171717;
+                background-color: #303030;
+                -moz-box-shadow: inset 0px 0px 5px #000000;
+                -webkit-box-shadow: inset 0px 0px 5px #000000;
+                box-shadow: inset 0px 0px 5px #000000;
+            }
+            img {
+                margin: 0;
+                display: block;
+                vertical-align: middle;
+                border: solid 1px #171717;
             }
         }
     }
@@ -1770,24 +2128,100 @@ body.page-seznam-nasich-zaku {
                 tbody {
                     tr {
                         td {
-                            &.views-field-field-zak-zkousky {
-                                .content {
+                            &.views-field-field-aktualni-pasek-zaka {
+                                span {
+                                    display: block;
                                     margin: 0;
-                                    .field {
-                                        display: none;
-                                    }
-                                    .field-name-field-zkouska-technicky-stupen  {
-                                        display: block;
-                                        margin: 0;
-                                        font-size: 12px;
-                                        .links {
-                                            color: #fff;
-                                            font-size: 0.857em;
-                                        }
-                                    }
+                                    font-size: 12px;
+                                    line-height: 18px;
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+body.node-type-zak-skoly {
+    #block-system-main {
+        .group-tech-stupen {
+            padding-top: 15px;
+            h3 {
+                color: #CFE3EC;
+                font-size: 12px !important;
+                height: auto !important;
+                margin: 0;
+                padding-right: 3px;
+                font-weight: bold;
+                float: left;
+            }
+        }
+        .field-name-field-aktualni-pasek-zaka {
+            margin: 0;
+            ul {
+                display: block;
+                li {
+                    display: block;
+                    padding: 0;
+                    padding-right: 82px;
+                    background: url('../images/belts.png') right top no-repeat;
+                    &.kup-10 {
+                        background-position: right top;
+                    }
+                    &.kup-9 {
+                        background-position: right -20px;
+                    }
+                    &.kup-8 {
+                        background-position: right -40px;
+                    }
+                    &.kup-7 {
+                        background-position: right -60px;
+                    }
+                    &.kup-6 {
+                        background-position: right -80px;
+                    }
+                    &.kup-5 {
+                        background-position: right -100px;
+                    }
+                    &.kup-4 {
+                        background-position: right -120px;
+                    }
+                    &.kup-3 {
+                        background-position: right -140px;
+                    }
+                    &.kup-2 {
+                        background-position: right -160px;
+                    }
+                    &.kup-1 {
+                        background-position: right -180px;
+                    }
+                    &.idan- {
+                        background-position: right -200px;
+                    }
+                    &.iidan- {
+                        background-position: right -220px;
+                    }
+                    &.iiidan- {
+                        background-position: right -240px;
+                    }
+                    &.ivdan- {
+                        background-position: right -260px;
+                    }
+                    &.vdan- {
+                        background-position: right -280px;
+                    }
+                    &.vidan- {
+                        background-position: right -300px;
+                    }
+                    &.viidan- {
+                        background-position: right -320px;
+                    }
+                    &.viiidan- {
+                        background-position: right -340px;
+                    }
+                    &.ixdan- {
+                        background-position: right -360px;
                     }
                 }
             }
@@ -1828,9 +2262,6 @@ body.node-type-vedeni-skoly {
                     color: #CFE3EC;
                 }
             }
-        }
-        .field-name-field-zak-prijmeni {
-            padding-top: 15px;
         }
         .field-name-field-zak-jmeno {
             margin-bottom: 5px;
@@ -1876,12 +2307,13 @@ body.node-type-vedeni-skoly {
         }
         .group-informace,
         .group-vice-informaci {
+            overflow: hidden;
             h3 {
                 display: none;
             }
             table {
                 width: auto !important;
-                margin: 0;
+                margin: 5px 0;
                 border: solid 1px #171717;
                 border-collapse: inherit;
                 border-right-width: 2px;
@@ -1924,9 +2356,6 @@ body.node-type-vedeni-skoly {
                         }
                     }
                 }
-            }
-            &.group-informace2 {
-                margin-bottom: 5px;
             }
         }
         .field-type-field-collection {
@@ -2182,7 +2611,8 @@ body.page-nasi-treneri {
         }
     }
 }
-body.page-seznam-nasich-zaku {
+body.page-seznam-nasich-zaku,
+body.page-seznam-nasich-zaku-vedouci {
     .view-seznam-nasich-zaku {
         .views-field,
         .field,
@@ -2197,65 +2627,129 @@ body.page-seznam-nasich-zaku {
             color: #fff;
         }
         .view-content {
-            .views-field-field-zak-zkousky {
-                .field-name-field-zkouska-technicky-stupen {
+            .views-field-field-zak-zkousky,
+            .views-field-field-aktualni-pasek-zaka {
+                ul {
+                    padding: 0 !important;
+                    list-style: none;
+                    margin: 0;
+                }
+                span,
+                .views-field {
                     padding-left: 85px;
-                    background: url('../images/belts.png') left top no-repeat;
-                    &.kup-10 {
+                    background: url('../images/belts.png') left -380px no-repeat;
+                }
+                &.kup-10 {
+                    span,
+                    .views-field {
                         background-position: left top;
                     }
-                    &.kup-9 {
+                }
+                &.kup-9 {
+                    span,
+                    .views-field {
                         background-position: left -20px;
                     }
-                    &.kup-8 {
+                }
+                &.kup-8 {
+                    span,
+                    .views-field {
                         background-position: left -40px;
                     }
-                    &.kup-7 {
+                }
+                &.kup-7 {
+                    span,
+                    .views-field {
                         background-position: left -60px;
                     }
-                    &.kup-6 {
+                }
+                &.kup-6 {
+                    span,
+                    .views-field {
                         background-position: left -80px;
                     }
-                    &.kup-5 {
+                }
+                &.kup-5 {
+                    span,
+                    .views-field {
                         background-position: left -100px;
                     }
-                    &.kup-4 {
+                }
+                &.kup-4 {
+                    span,
+                    .views-field {
                         background-position: left -120px;
                     }
-                    &.kup-3 {
+                }
+                &.kup-3 {
+                    span,
+                    .views-field {
                         background-position: left -140px;
                     }
-                    &.kup-2 {
+                }
+                &.kup-2 {
+                    span,
+                    .views-field {
                         background-position: left -160px;
                     }
-                    &.kup-1 {
+                }
+                &.kup-1 {
+                    span,
+                    .views-field {
                         background-position: left -180px;
                     }
-                    &.idan- {
+                }
+                &.idan- {
+                    span,
+                    .views-field {
                         background-position: left -200px;
                     }
-                    &.iidan- {
+                }
+                &.iidan- {
+                    span,
+                    .views-field {
                         background-position: left -220px;
                     }
-                    &.iiidan- {
+                }
+                &.iiidan- {
+                    span,
+                    .views-field {
                         background-position: left -240px;
                     }
-                    &.ivdan- {
+                }
+                &.ivdan- {
+                    span,
+                    .views-field {
                         background-position: left -260px;
                     }
-                    &.vdan- {
+                }
+                &.vdan- {
+                    span,
+                    .views-field {
                         background-position: left -280px;
                     }
-                    &.vidan- {
+                }
+                &.vidan- {
+                    span,
+                    .views-field {
                         background-position: left -300px;
                     }
-                    &.viidan- {
+                }
+                &.viidan- {
+                    span,
+                    .views-field {
                         background-position: left -320px;
                     }
-                    &.viiidan- {
+                }
+                &.viiidan- {
+                    span,
+                    .views-field {
                         background-position: left -340px;
                     }
-                    &.ixdan- {
+                }
+                &.ixdan- {
+                    span,
+                    .views-field {
                         background-position: left -360px;
                     }
                 }
@@ -2263,6 +2757,7 @@ body.page-seznam-nasich-zaku {
         }
     }
 }
+
 body.node-type-sestava {
     .group-informace-o-sestave,
     .group-vyznam-sestavy,
@@ -2749,7 +3244,7 @@ body.page-taxonomy-term {
                 a {
                     width: 100px;
                     height: 100px;
-                    border: solid 2px #171717;
+                    border: solid 2px #CFE3EC;
                     padding: 3px;
                     background: url('../images/books/0.png') 3px 3px #202020 no-repeat;
                 }
@@ -2766,6 +3261,7 @@ body.page-taxonomy-term {
     .view-content {
         .views-row {
             .views-field-title {
+                padding-top: 5px;
                 font-weight: bold;
                 color: #CFE3EC;
             }
@@ -2776,12 +3272,263 @@ body.page-taxonomy-term {
                 .views-field-field-odkaz-dalsi-material {
                     width: 100px;
                     height: 100px;
-                    border: solid 2px #171717;
+                    border: solid 2px #CFE3EC;
                     padding: 3px;
                     background: url('../images/books/00.png') 3px 3px #202020 no-repeat;
                 }
                 .views-field-title {
                     color: $blue;
+                }
+            }
+        }
+    }
+}
+
+#page-wrapper #page #main-wrapper #main #content .section .region-content #block-views-hlavn-novinky-block {
+    .content {
+        .view-hlavn-novinky {
+            .view-content {
+                .views-row {
+                    border: solid 2px #171717;
+                    background-color: #202020;
+                    padding: 10px 10px 0 10px;
+                    margin-bottom: 10px;
+                    .views-field-title {
+                        h3 {
+                            margin: 0 0 10px 0;
+                            a {
+                                color: $orange;
+                                font-weight: bold;
+                                text-decoration: none;
+                                border-bottom: solid 1px $orange;
+                                &:hover {
+                                    text-decoration: none;
+                                    border-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                    .views-field-body {
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+#page-wrapper #page #main-wrapper #main #content .section .region-content .block {
+    .search-form {
+        .search-advanced {
+            border: solid 1px #171717;
+            margin: 10px 0 32px 0;
+            background-color: #3a3a3a;
+            -khtml-border-radius: 0px;
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 0px;
+            border-radius: 0px;
+            position: relative;
+            top: 0;
+            padding: 0;
+            legend {
+                background-color: #202020;
+                margin: 0;
+                border: none;
+                border-bottom: solid 1px #171717;
+                background-color: #3a3a3a;
+                -khtml-border-radius: 0px;
+                -moz-border-radius: 0px;
+                -webkit-border-radius: 0px;
+                border-radius: 0px;
+                z-index: 10;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                .fieldset-title {
+                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    color: #CFE3EC !important;
+                    text-shadow: none;
+                    font-weight: bold;
+                    padding-left: 15px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: block;
+                    text-decoration: none;
+                }
+                &:hover {
+                    background-color: #202020;
+                    .fieldset-title {
+                        color: #19C0DB !important;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .fieldset-wrapper {
+                margin-top: 35px;
+            }
+            &.collapsed {
+                height: 2em;
+                legend {
+                    background-color: #202020;
+                }
+            }
+        }
+    }
+}
+
+body.page-seznam-nasich-zaku-vedouci {
+    #page-wrapper #page #main-wrapper #main #content .section .region-content .block {
+        position: relative;
+        .views-exposed-form {
+            .views-exposed-widgets {
+                text-align: center;
+                .views-exposed-widget {
+                    display: inline-block;
+                    &.views-reset-button,
+                    &.views-submit-button {
+                        float: right;
+                    }
+                    &.views-submit-button {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+        .views-table {
+            position: relative;
+            margin-left: calc(-100% + 235px);
+            z-index: 15;
+        }
+        .sticky-header {
+            z-index: 16;
+            margin-left: 1px;
+            th {
+                border-color: #171717;
+                border-bottom-style: solid;
+            }
+        }
+        @media only screen and (max-width: 1910px) {
+            .views-table {
+                margin-left: calc(-100% + 335px);
+            }
+        }
+        @media only screen and (max-width: 1710px) {
+            .views-table {
+                margin-left: calc(-100% + 435px);
+            }
+        }
+        @media only screen and (max-width: 1510px) {
+            .views-table {
+                margin-left: calc(-100% + 535px);
+            }
+        }
+        @media only screen and (max-width: 1310px) {
+            .views-table {
+                margin-left: calc(-50% + 190px);
+            }
+        }
+    }
+}
+body.node-type-akce {
+    #page-wrapper #page #main-wrapper #main #content .section .region-content {
+        .field {
+            display: inline-block;
+            width: 70%;
+            vertical-align: top;
+            clear: none;
+            margin: 5px 0;
+            font-size: 12px !important;
+            h3,
+            ul,
+            li {
+                font-size: 12px !important;
+            }
+        }
+        .field-name-field-obrazek-k-akci {
+            display: inline-block;
+            margin-right: 10px;
+            width: auto;
+            float: left;
+            .field-items {
+                display: block !important;
+                padding: 8px;
+                border: solid 1px #171717;
+                background-color: #303030;
+                -moz-box-shadow: inset 0px 0px 5px #000000;
+                -webkit-box-shadow: inset 0px 0px 5px #000000;
+                box-shadow: inset 0px 0px 5px #000000;
+                img {
+                    margin: 0;
+                    display: block;
+                    vertical-align: middle;
+                    border: solid 1px #171717;
+                }
+            }
+        }
+    }
+}
+
+body.page-node #page-wrapper #page #main-wrapper #main #content .section .region-content .content .content {
+    ul.flippy {
+        margin-bottom: 10px;
+    }
+}
+body.page-user {
+    #block-system-main {
+        clear: both;
+        overflow: hidden;
+        .profile {
+            .user-picture {
+                display: inline-block;
+                float: left;
+                a {
+                    display: block !important;
+                    padding: 8px;
+                    -moz-box-shadow: inset 0px 0px 5px #000000;
+                    -webkit-box-shadow: inset 0px 0px 5px #000000;
+                    box-shadow: inset 0px 0px 5px #000000;
+                    border: solid 1px #171717;
+                    background-color: #303030;
+                    img {
+                        margin: 0;
+                        border: solid 1px #171717;
+                        display: block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .field {
+                display: block;
+                width: 70%;
+                .field-label,
+                .field-items {
+                    display: inline-block;
+                }
+                .field-label {
+                    margin-right: 5px;
+                }
+            }
+            h3 {
+                display: block;
+                margin-left: 132px;
+            }
+        }
+    }
+}
+.view-display-id-page_1 {
+    .views-field {
+        white-space: nowrap;
+        .item-list {
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    display: block;
+                    white-space: nowrap;
                 }
             }
         }

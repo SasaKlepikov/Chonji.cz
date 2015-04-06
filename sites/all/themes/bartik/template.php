@@ -1,6 +1,14 @@
 <?php
 
-error_reporting(0);
+global $user;
+
+if ($user->roles[3] == 'administrator') {
+  error_reporting(-1);
+}
+else {
+  error_reporting(0);
+}
+
 /**
  * Add body classes if certain regions have content.
  */
@@ -9,16 +17,11 @@ function bartik_preprocess_html(&$variables) {
     $variables['classes_array'][] = 'featured';
   }
 
-  if (!empty($variables['page']['triptych_first'])
-    || !empty($variables['page']['triptych_middle'])
-    || !empty($variables['page']['triptych_last'])) {
+  if (!empty($variables['page']['triptych_first']) || !empty($variables['page']['triptych_middle']) || !empty($variables['page']['triptych_last'])) {
     $variables['classes_array'][] = 'triptych';
   }
 
-  if (!empty($variables['page']['footer_firstcolumn'])
-    || !empty($variables['page']['footer_secondcolumn'])
-    || !empty($variables['page']['footer_thirdcolumn'])
-    || !empty($variables['page']['footer_fourthcolumn'])) {
+  if (!empty($variables['page']['footer_firstcolumn']) || !empty($variables['page']['footer_secondcolumn']) || !empty($variables['page']['footer_thirdcolumn']) || !empty($variables['page']['footer_fourthcolumn'])) {
     $variables['classes_array'][] = 'footer-columns';
   }
 
@@ -47,7 +50,7 @@ function bartik_process_page(&$variables) {
   }
   // Always print the site name and slogan, but if they are toggled off, we'll
   // just hide them visually.
-  $variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
+  $variables['hide_site_name'] = theme_get_setting('toggle_name') ? FALSE : TRUE;
   $variables['hide_site_slogan'] = theme_get_setting('toggle_slogan') ? FALSE : TRUE;
   if ($variables['hide_site_name']) {
     // If toggle_name is FALSE, the site_name will be empty, so we rebuild it.
@@ -94,7 +97,7 @@ function bartik_preprocess_maintenance_page(&$variables) {
 function bartik_process_maintenance_page(&$variables) {
   // Always print the site name and slogan, but if they are toggled off, we'll
   // just hide them visually.
-  $variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
+  $variables['hide_site_name'] = theme_get_setting('toggle_name') ? FALSE : TRUE;
   $variables['hide_site_slogan'] = theme_get_setting('toggle_slogan') ? FALSE : TRUE;
   if ($variables['hide_site_name']) {
     // If toggle_name is FALSE, the site_name will be empty, so we rebuild it.
@@ -151,7 +154,7 @@ function bartik_field__taxonomy_term_reference($variables) {
   $output .= '</ul>';
 
   // Render the top-level DIV.
-  $output = '<div class="' . $variables['classes'] . (!in_array('clearfix', $variables['classes_array']) ? ' clearfix' : '') . '"' . $variables['attributes'] .'>' . $output . '</div>';
+  $output = '<div class="' . $variables['classes'] . (!in_array('clearfix', $variables['classes_array']) ? ' clearfix' : '') . '"' . $variables['attributes'] . '>' . $output . '</div>';
 
   return $output;
 }
