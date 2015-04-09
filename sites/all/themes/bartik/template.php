@@ -2,7 +2,7 @@
 
 global $user;
 
-if ($user->roles[3] == 'administrator') {
+if (isset($user->roles[3]) && $user->roles[3] == 'administrator') {
   error_reporting(-1);
 }
 else {

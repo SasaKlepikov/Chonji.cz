@@ -349,7 +349,7 @@ function theme_date_display_range($variables) {
   }
 
   // Wrap the result with the attributes.
-  $output = '<div class="date-display-range">' . t('!start-date - !end-date', array(
+  $output = '<div class="date-display-range">' . t('!start-date to !end-date', array(
     '!start-date' => $start_date,
     '!end-date' => $end_date,
   )) . '</div>';
@@ -477,7 +477,7 @@ function theme_date_display_remaining($variables) {
   $output = '';
   $show_remaining_text = t('The upcoming date less then 1 day.');
   if ($remaining_days) {
-    $show_remaining_text = format_plural($remaining_days, 'Zbývajících dní do dne konání <strong>1 den</strong>', 'Zbývajících dní do dne konání <strong>@count dní</strong>');
+    $show_remaining_text = format_plural($remaining_days, 'To event remaining 1 day', 'To event remaining @count days');
   }
 
   return '<div class="date-display-remaining"><span class="date-display-remaining">' . $show_remaining_text . '</span></div>';
