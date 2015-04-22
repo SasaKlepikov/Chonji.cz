@@ -1312,6 +1312,31 @@ ul.flippy {
         text-decoration: none; }
     .collapsible.field-group-fieldset legend:hover {
       background-color: #202020; }
+  .collapsible.field-group-fieldset .form-wrapper {
+    border: none;
+    background: none;
+    border-radius: 0px; }
+  .collapsible.field-group-fieldset .date-combo.form-wrapper {
+    border: solid 1px #171717; }
+    .collapsible.field-group-fieldset .date-combo.form-wrapper legend .fieldset-legend {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #CFE3EC !important;
+      text-shadow: none;
+      font-weight: bold;
+      background: none !important;
+      padding-left: 0px !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block; }
+      .collapsible.field-group-fieldset .date-combo.form-wrapper legend .fieldset-legend:hover {
+        color: #CFE3EC !important; }
+      .collapsible.field-group-fieldset .date-combo.form-wrapper legend .fieldset-legend:hover, .collapsible.field-group-fieldset .date-combo.form-wrapper legend .fieldset-legend:active, .collapsible.field-group-fieldset .date-combo.form-wrapper legend .fieldset-legend:focus {
+        text-decoration: none; }
+    .collapsible.field-group-fieldset .date-combo.form-wrapper legend:hover {
+      background-color: #3a3a3a; }
   .collapsible.field-group-fieldset .fieldset-wrapper {
     margin-top: 50px; }
   .collapsible.field-group-fieldset.collapsed {
@@ -1322,6 +1347,85 @@ ul.flippy {
     border-right-width: 1px; }
     .collapsible.field-group-fieldset.collapsed legend {
       background-color: #202020; }
+
+body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset input {
+  font-size: 11px !important;
+  line-height: 12px !important;
+  height: auto;
+  padding: 4px !important;
+  margin: 2px 0 !important; }
+body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-multiple-table thead tr th {
+  border-color: #171717; }
+  body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-multiple-table thead tr th label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #CFE3EC !important;
+    text-shadow: none;
+    font-weight: bold;
+    padding-left: 15px;
+    line-height: 18px;
+    font-size: 12px; }
+body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-multiple-table tbody tr {
+  border-color: #171717; }
+  body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-multiple-table tbody tr td {
+    border-color: #171717;
+    line-height: 18px;
+    font-size: 12px; }
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-multiple-table tbody tr td.field-multiple-drag {
+      background-color: #202020; }
+  body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-multiple-table tbody tr:hover {
+    background-color: #303030; }
+body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .form-item .clearfix {
+  text-align: right; }
+  body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .form-item .clearfix .field-add-more-submit {
+    margin: 6px 0 !important;
+    padding: 4px 17px !important;
+    line-height: 14px !important;
+    font-size: 12px !important; }
+body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-datum-narozen- .fieldset-wrapper .form-type-date-popup {
+  display: block;
+  margin: 0; }
+  body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-datum-narozen- .fieldset-wrapper .form-type-date-popup .form-item {
+    overflow: hidden;
+    display: block; }
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-datum-narozen- .fieldset-wrapper .form-type-date-popup .form-item label,
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-datum-narozen- .fieldset-wrapper .form-type-date-popup .form-item input,
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-datum-narozen- .fieldset-wrapper .form-type-date-popup .form-item .description {
+      display: inline-block;
+      float: none;
+      clear: none;
+      vertical-align: middle;
+      margin-right: 5px; }
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-datum-narozen- .fieldset-wrapper .form-type-date-popup .form-item label,
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-datum-narozen- .fieldset-wrapper .form-type-date-popup .form-item .description {
+      font-size: 10px;
+      line-height: 18px;
+      color: #CFE3EC !important;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-rodn-slo,
+body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-m-sto,
+body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-ulice-zak,
+body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-psc-zaka {
+  display: inline-block;
+  max-width: 33%;
+  margin-right: 5px; }
+  body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-rodn-slo .form-item,
+  body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-m-sto .form-item,
+  body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-ulice-zak .form-item,
+  body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-psc-zaka .form-item {
+    display: block; }
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-rodn-slo .form-item label,
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-m-sto .form-item label,
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-ulice-zak .form-item label,
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-psc-zaka .form-item label {
+      display: block;
+      font-size: 12px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #CFE3EC !important; }
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-rodn-slo .form-item input,
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-m-sto .form-item input,
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-ulice-zak .form-item input,
+    body.page-node-edit.node-type-zak-skoly .collapsible.field-group-fieldset .field-name-field-psc-zaka .form-item input {
+      max-width: 95%; }
 
 #content .block h2 {
   margin: 0 0 5px 0; }
@@ -1727,6 +1831,9 @@ body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .fieldset-wra
 body.node-type-vedeni-skoly #block-system-main .group-osobni-udaje .fieldset-wrapper,
 body.node-type-vedeni-skoly #block-system-main .group-informace-vedouciho .fieldset-wrapper {
   margin-top: 35px; }
+body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-collection-view.view-mode-full,
+body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-collection-view.view-mode-full {
+  border-bottom: none; }
 body.node-type-zak-skoly #block-system-main .group-osobni-udaje .field .field-label,
 body.node-type-zak-skoly #block-system-main .group-informace-vedouciho .field .field-label,
 body.node-type-vedeni-skoly #block-system-main .group-osobni-udaje .field .field-label,
@@ -1766,6 +1873,37 @@ body.node-type-vedeni-skoly #block-system-main .field-name-field-fotografie-vedo
     box-shadow: inset 0px 0px 5px #000000;
     border: solid 1px #171717;
     background-color: #303030; }
+  body.node-type-zak-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie,
+  body.node-type-zak-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie,
+  body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie,
+  body.node-type-vedeni-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie {
+    float: none; }
+    body.node-type-zak-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie label,
+    body.node-type-zak-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie label,
+    body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie label,
+    body.node-type-vedeni-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie label {
+      color: #CFE3EC;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: bold;
+      display: block; }
+    body.node-type-zak-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie .image-widget,
+    body.node-type-zak-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie .image-widget,
+    body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie .image-widget,
+    body.node-type-vedeni-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie .image-widget {
+      text-align: left;
+      display: block; }
+      body.node-type-zak-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie .image-widget .image-widget-data,
+      body.node-type-zak-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie .image-widget .image-widget-data,
+      body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie .image-widget .image-widget-data,
+      body.node-type-vedeni-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie .image-widget .image-widget-data {
+        float: none;
+        text-align: left; }
+        body.node-type-zak-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie .image-widget .image-widget-data .filefield-sources-list,
+        body.node-type-zak-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie .image-widget .image-widget-data .filefield-sources-list,
+        body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-fotografie#edit-field-zak-fotografie .image-widget .image-widget-data .filefield-sources-list,
+        body.node-type-vedeni-skoly #block-system-main .field-name-field-fotografie-vedouciho#edit-field-zak-fotografie .image-widget .image-widget-data .filefield-sources-list {
+          text-align: left; }
 body.node-type-zak-skoly #block-system-main .field-name-field-pozice-vedouciho,
 body.node-type-vedeni-skoly #block-system-main .field-name-field-pozice-vedouciho {
   padding-top: 5px; }
@@ -1786,6 +1924,11 @@ body.node-type-vedeni-skoly #block-system-main .group-vice-informaci {
   body.node-type-vedeni-skoly #block-system-main .group-informace h3,
   body.node-type-vedeni-skoly #block-system-main .group-vice-informaci h3 {
     display: none; }
+  body.node-type-zak-skoly #block-system-main .group-informace thead tr th,
+  body.node-type-zak-skoly #block-system-main .group-vice-informaci thead tr th,
+  body.node-type-vedeni-skoly #block-system-main .group-informace thead tr th,
+  body.node-type-vedeni-skoly #block-system-main .group-vice-informaci thead tr th {
+    color: #CFE3EC; }
   body.node-type-zak-skoly #block-system-main .group-informace table,
   body.node-type-zak-skoly #block-system-main .group-vice-informaci table,
   body.node-type-vedeni-skoly #block-system-main .group-informace table,
@@ -1878,6 +2021,333 @@ body.node-type-vedeni-skoly #block-system-main .group-vice-informaci {
         body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table thead tr td.views-field .file img,
         body.node-type-vedeni-skoly #block-system-main .group-vice-informaci table tbody tr td.views-field .file img {
           vertical-align: middle; }
+body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item,
+body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item {
+  display: block;
+  overflow: hidden; }
+  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .entity-field-collection-item,
+  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .entity-field-collection-item {
+    display: block;
+    overflow: hidden; }
+  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .group-informace-zkousky-main tbody tr td,
+  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .group-informace-zkousky-main tbody tr td {
+    width: 25% !important; }
+  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset,
+  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
+    body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset legend,
+    body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset legend {
+      background-color: #2d1c1c; }
+      body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset legend:hover,
+      body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset legend:hover {
+        background-color: #202020; }
+    body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper,
+    body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper {
+      background-color: #666;
+      padding: 10px 20px;
+      margin: 25px 0 0 0; }
+      body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper legend,
+      body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper legend {
+        background-color: #393939; }
+      body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .group-informace-zkousky,
+      body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .group-informace-zkousky {
+        border-bottom: solid 1px #171717; }
+      body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body,
+      body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body {
+        border-top: solid 1px #171717;
+        margin: 0 1%;
+        min-width: 48%;
+        vertical-align: middle;
+        display: inline-block; }
+        body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body h3,
+        body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body h3 {
+          background: #757575;
+          background: rgba(0, 0, 0, 0.51);
+          font-weight: bold;
+          padding: 4px 9px;
+          border: solid 1px #171717;
+          border-top: 0; }
+          body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body h3 span,
+          body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body h3 span {
+            color: #CFE3EC; }
+        body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body ul.links,
+        body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body ul.links {
+          float: none; }
+        body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection,
+        body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection {
+          border: none; }
+          body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items,
+          body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items {
+            border-left: solid 1px #171717;
+            border-bottom: solid 1px #171717;
+            width: 100%;
+            display: table; }
+            body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item,
+            body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item {
+              background-color: #292929;
+              vertical-align: middle;
+              display: table-cell; }
+              body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view,
+              body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view {
+                overflow: hidden; }
+                body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field,
+                body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field {
+                  vertical-align: middle;
+                  display: block;
+                  font-weight: bold;
+                  border-right: solid 1px #171717;
+                  padding: 0; }
+                  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field ul,
+                  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field ul {
+                    padding: 4px 9px; }
+                    body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field ul li,
+                    body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field ul li {
+                      padding: 0; }
+                  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field .field-items,
+                  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field .field-items {
+                    padding: 4px 9px;
+                    width: auto;
+                    display: block;
+                    border: 0;
+                    border-top: solid 1px #171717; }
+                    body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field .field-items .field-item,
+                    body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .content .field .field-items .field-item {
+                      display: block; }
+                body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .field-collection-view-links,
+                body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .field-collection-view-links {
+                  float: none;
+                  padding: 0;
+                  border-bottom: solid 1px #171717; }
+                  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .field-collection-view-links li a,
+                  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .collapsible.field-group-fieldset .fieldset-wrapper .obdrzene-body .field-type-field-collection .field-items .field-item .field-collection-view .field-collection-view-links li a {
+                    border: none;
+                    border-right: solid 1px #171717; }
+  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links,
+  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links {
+    display: block;
+    width: 100%;
+    border: none;
+    border-top: solid 1px #171717;
+    border-collapse: separate;
+    overflow: hidden;
+    padding: 0 0 0 2px;
+    background-color: #292929; }
+    body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links li,
+    body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links li {
+      display: table-cell;
+      border-collapse: separate;
+      min-width: 50%;
+      border: none; }
+      body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links li a,
+      body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links li a {
+        display: block;
+        margin: 0;
+        white-space: nowrap;
+        padding: 2px;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center;
+        border-left: solid 1px #171717; }
+      body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links li.edit,
+      body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links li.edit {
+        max-width: 384px; }
+      body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links li.delete,
+      body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item .field-collection-view .field-collection-view-links li.delete {
+        max-width: 383px; }
+  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item:hover .field-collection-view .entity-field-collection-item .group-informace-zkousky .field-group-multiple-table tbody tr td,
+  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item:hover .field-collection-view .entity-field-collection-item .group-informace-zkousky .field-group-multiple-table tbody tr td {
+    background-color: #3a3a3a; }
+  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item:hover .field-collection-view .field-collection-view-links,
+  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item:hover .field-collection-view .field-collection-view-links {
+    background-color: #153; }
+  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item:hover .field-collection-view .field-collection-view .field-collection-view-links,
+  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .field-name-field-zak-zkousky .field-item:hover .field-collection-view .field-collection-view .field-collection-view-links {
+    background-color: #292929; }
+body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .action-links-field-collection-add,
+body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .action-links-field-collection-add {
+  float: none;
+  padding: 0;
+  margin: 0; }
+  body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .action-links-field-collection-add li,
+  body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .action-links-field-collection-add li {
+    display: inline-block;
+    float: none; }
+    body.node-type-zak-skoly #block-system-main .group-zkousky-zaka .action-links-field-collection-add li a,
+    body.node-type-vedeni-skoly #block-system-main .group-zkousky-zaka .action-links-field-collection-add li a {
+      display: block;
+      margin: 2px 0;
+      font-size: 10px;
+      line-height: 10px;
+      border-color: #171717; }
+body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka,
+body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka {
+  border: none; }
+  body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky,
+  body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky,
+  body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne,
+  body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni,
+  body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky,
+  body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky,
+  body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne,
+  body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni {
+    margin-top: 0;
+    border: none;
+    min-height: 26px;
+    padding-bottom: 0; }
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky legend,
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky legend,
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne legend,
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni legend,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky legend,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky legend,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne legend,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni legend {
+      height: auto;
+      border: none; }
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky legend span a,
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky legend span a,
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne legend span a,
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni legend span a,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky legend span a,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky legend span a,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne legend span a,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni legend span a {
+        background-color: #2d1c1c;
+        height: 24px;
+        display: block;
+        border: solid 1px #171717;
+        background-repeat: no-repeat;
+        background-image: url(/misc/menu-collapsed.png);
+        background-position: 5px 50%; }
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky legend span a:hover,
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky legend span a:hover,
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne legend span a:hover,
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni legend span a:hover,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky legend span a:hover,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky legend span a:hover,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne legend span a:hover,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni legend span a:hover {
+          background-color: #202020; }
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper,
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper,
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper,
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper {
+      padding: 0;
+      border: none;
+      padding-top: 25px; }
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper .field-type-field-collection,
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper .field-type-field-collection,
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper .field-type-field-collection,
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper .field-type-field-collection,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper .field-type-field-collection,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper .field-type-field-collection,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper .field-type-field-collection,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper .field-type-field-collection {
+        border: none;
+        border-right: solid 1px #171717;
+        border-bottom: solid 1px #171717;
+        clear: both;
+        overflow: hidden; }
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations,
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations,
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper .field-type-field-collection .field_collection_item_operations,
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper .field-type-field-collection .field_collection_item_operations,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper .field-type-field-collection .field_collection_item_operations,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper .field-type-field-collection .field_collection_item_operations {
+          overflow: hidden; }
+          body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links,
+          body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links,
+          body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links,
+          body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links,
+          body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links,
+          body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links,
+          body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links,
+          body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links {
+            border: none; }
+            body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links li a,
+            body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links li a,
+            body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links li a,
+            body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links li a,
+            body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links li a,
+            body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links li a,
+            body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links li a,
+            body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper .field-type-field-collection .field_collection_item_operations .field-collection-view-links li a {
+              display: block;
+              font-size: 10px !important;
+              line-height: 10px;
+              padding: 3px 10px; }
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper ul.action-links-field-collection-add,
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper ul.action-links-field-collection-add,
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper ul.action-links-field-collection-add,
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper ul.action-links-field-collection-add,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper ul.action-links-field-collection-add,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper ul.action-links-field-collection-add,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper ul.action-links-field-collection-add,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper ul.action-links-field-collection-add {
+        clear: both;
+        float: none;
+        margin: 5px 0;
+        overflow: hidden;
+        text-align: right; }
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper ul.action-links-field-collection-add li,
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper ul.action-links-field-collection-add li,
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper ul.action-links-field-collection-add li,
+        body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper ul.action-links-field-collection-add li,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper ul.action-links-field-collection-add li,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper ul.action-links-field-collection-add li,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper ul.action-links-field-collection-add li,
+        body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper ul.action-links-field-collection-add li {
+          display: inline-block;
+          float: none; }
+          body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper ul.action-links-field-collection-add li a,
+          body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper ul.action-links-field-collection-add li a,
+          body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper ul.action-links-field-collection-add li a,
+          body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper ul.action-links-field-collection-add li a,
+          body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper ul.action-links-field-collection-add li a,
+          body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper ul.action-links-field-collection-add li a,
+          body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne .fieldset-wrapper ul.action-links-field-collection-add li a,
+          body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper ul.action-links-field-collection-add li a {
+            display: block;
+            float: none;
+            font-size: 10px;
+            line-height: 10px;
+            padding: 3px 10px; }
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky.collapsed legend span a,
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky.collapsed legend span a,
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne.collapsed legend span a,
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni.collapsed legend span a,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky.collapsed legend span a,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky.collapsed legend span a,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-skolne.collapsed legend span a,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni.collapsed legend span a {
+      background-image: url(/misc/menu-expanded.png);
+      background-position: 5px 50%; }
+  body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .field-collection-view-links,
+  body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .field-collection-view-links {
+    float: none;
+    display: block;
+    border: none;
+    text-align: right; }
+    body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .field-collection-view-links li,
+    body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .field-collection-view-links li {
+      float: none;
+      display: inline-block; }
+      body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .field-collection-view-links li a,
+      body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .field-collection-view-links li a {
+        display: block;
+        padding: 3px 10px;
+        font-size: 10px;
+        border: solid 1px #CFE3EC;
+        line-height: 10px;
+        margin: 0 0 0 10px; }
 body.node-type-zak-skoly #block-system-main .field-type-field-collection,
 body.node-type-vedeni-skoly #block-system-main .field-type-field-collection {
   border: solid 1px #171717;
@@ -1908,8 +2378,7 @@ body.node-type-vedeni-skoly #block-system-main .field-type-field-collection {
   body.node-type-vedeni-skoly #block-system-main .field-type-field-collection tbody tr td {
     font-size: 12px !important;
     border-color: #171717;
-    border-right-width: 0;
-    width: 25% !important; }
+    border-right-width: 0; }
   body.node-type-zak-skoly #block-system-main .field-type-field-collection thead tr th,
   body.node-type-zak-skoly #block-system-main .field-type-field-collection tbody tr th,
   body.node-type-vedeni-skoly #block-system-main .field-type-field-collection thead tr th,
@@ -1974,67 +2443,82 @@ body.node-type-vedeni-skoly #block-system-main .action-links-field-collection-ad
       color: #CFE3EC;
       border: solid 1px #CFE3EC;
       padding: 3px 10px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen .field-name-field-zkouska-technicky-stupen {
-  padding-left: 85px;
-  background: url("../images/belts.png") left top no-repeat; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-10 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-10 .field-name-field-zkouska-technicky-stupen {
-  background-position: left top; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-9 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-9 .field-name-field-zkouska-technicky-stupen {
-  background-position: left -20px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-8 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-8 .field-name-field-zkouska-technicky-stupen {
-  background-position: left -40px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-7 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-7 .field-name-field-zkouska-technicky-stupen {
-  background-position: left -60px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-6 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-6 .field-name-field-zkouska-technicky-stupen {
-  background-position: left -80px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-5 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-5 .field-name-field-zkouska-technicky-stupen {
-  background-position: left -100px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-4 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-4 .field-name-field-zkouska-technicky-stupen {
-  background-position: left -120px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-3 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-3 .field-name-field-zkouska-technicky-stupen {
-  background-position: left -140px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-2 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-2 .field-name-field-zkouska-technicky-stupen {
-  background-position: left -160px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.kup-1 .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.kup-1 .field-name-field-zkouska-technicky-stupen {
-  background-position: left -180px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.idan- .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.idan- .field-name-field-zkouska-technicky-stupen {
-  background-position: left -200px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.iidan- .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.iidan- .field-name-field-zkouska-technicky-stupen {
-  background-position: left -220px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.iiidan- .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.iiidan- .field-name-field-zkouska-technicky-stupen {
-  background-position: left -240px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.ivdan- .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.ivdan- .field-name-field-zkouska-technicky-stupen {
-  background-position: left -260px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.vdan- .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.vdan- .field-name-field-zkouska-technicky-stupen {
-  background-position: left -280px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.vidan- .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.vidan- .field-name-field-zkouska-technicky-stupen {
-  background-position: left -300px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.viidan- .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.viidan- .field-name-field-zkouska-technicky-stupen {
-  background-position: left -320px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.viiidan- .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.viiidan- .field-name-field-zkouska-technicky-stupen {
-  background-position: left -340px; }
-body.node-type-zak-skoly #block-system-main .field_zkouska_technicky_stupen.ixdan- .field-name-field-zkouska-technicky-stupen,
-body.node-type-vedeni-skoly #block-system-main .field_zkouska_technicky_stupen.ixdan- .field-name-field-zkouska-technicky-stupen {
-  background-position: left -360px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-10,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-10 {
+  background: url("../images/belts.png") 3px 4px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-9,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-9 {
+  background: url("../images/belts.png") 3px -16px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-8,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-8 {
+  background: url("../images/belts.png") 3px -36px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-7,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-7 {
+  background: url("../images/belts.png") 3px -56px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-6,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-6 {
+  background: url("../images/belts.png") left -76px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-5,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-5 {
+  background: url("../images/belts.png") left -96px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-4,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-4 {
+  background: url("../images/belts.png") left -116px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-3,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-3 {
+  background: url("../images/belts.png") left -136px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-2,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-2 {
+  background: url("../images/belts.png") left -156px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-1,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.kup-1 {
+  background: url("../images/belts.png") left -176px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.idan-,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.idan- {
+  background: url("../images/belts.png") left -196px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.iidan-,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.iidan- {
+  background: url("../images/belts.png") left -216px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.iiidan-,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.iiidan- {
+  background: url("../images/belts.png") left -236px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.ivdan-,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.ivdan- {
+  background: url("../images/belts.png") left -256px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.vdan-,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.vdan- {
+  background: url("../images/belts.png") left -276px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.vidan-,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.vidan- {
+  background: url("../images/belts.png") left -296px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.viidan-,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.viidan- {
+  background: url("../images/belts.png") left -316px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.viiidan-,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.viiidan- {
+  background: url("../images/belts.png") left -336px no-repeat;
+  padding-left: 85px; }
+body.node-type-zak-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.ixdan-,
+body.node-type-vedeni-skoly #block-system-main .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td.ixdan- {
+  background: url("../images/belts.png") left -356px no-repeat;
+  padding-left: 85px; }
 body.node-type-zak-skoly #block-system-main .group-galerie-vedouciho,
 body.node-type-vedeni-skoly #block-system-main .group-galerie-vedouciho {
   padding-bottom: 25px !important; }
@@ -2943,20 +3427,18 @@ body.page-user #block-system-main {
   overflow: hidden; }
   body.page-user #block-system-main .profile .user-picture {
     display: inline-block;
-    float: left; }
-    body.page-user #block-system-main .profile .user-picture a {
-      display: block !important;
-      padding: 8px;
-      -moz-box-shadow: inset 0px 0px 5px #000000;
-      -webkit-box-shadow: inset 0px 0px 5px #000000;
-      box-shadow: inset 0px 0px 5px #000000;
+    float: left;
+    padding: 8px;
+    -moz-box-shadow: inset 0px 0px 5px #000000;
+    -webkit-box-shadow: inset 0px 0px 5px #000000;
+    box-shadow: inset 0px 0px 5px #000000;
+    border: solid 1px #171717;
+    background-color: #303030; }
+    body.page-user #block-system-main .profile .user-picture img {
+      margin: 0;
       border: solid 1px #171717;
-      background-color: #303030; }
-      body.page-user #block-system-main .profile .user-picture a img {
-        margin: 0;
-        border: solid 1px #171717;
-        display: block;
-        vertical-align: middle; }
+      display: block;
+      vertical-align: middle; }
   body.page-user #block-system-main .profile .field {
     display: block;
     width: 70%; }

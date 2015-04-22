@@ -1640,6 +1640,41 @@ ul.flippy {
             background-color: $gray;
         }
     }
+    .form-wrapper {
+        border:none;
+        background: none;
+        border-radius: 0px;
+    }
+    .date-combo.form-wrapper {
+        border: solid 1px #171717;
+        legend {
+            .fieldset-legend {
+                font-family: $font_family;
+                color: #CFE3EC !important;
+                text-shadow: none;
+                font-weight: bold;
+                background: none !important;
+                padding-left: 0px !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                &:hover {
+                    color: #CFE3EC !important;
+                }
+                &:hover,
+                    &:active,
+                    &:focus {
+                    text-decoration: none;
+                }
+            }
+            &:hover {
+                background-color: #3a3a3a;
+            }
+        }
+    }
     .fieldset-wrapper {
         margin-top: 50px;
     }
@@ -1651,6 +1686,111 @@ ul.flippy {
         border-right-width: 1px;
         legend {
             background-color: $gray;
+        }
+    }
+}
+body.page-node-edit.node-type-zak-skoly {
+    .collapsible.field-group-fieldset {
+        input {
+            font-size: 11px !important;
+            line-height: 12px !important;
+            height: auto;
+            padding: 4px !important;
+            margin: 2px 0 !important;
+        }
+        .field-multiple-table {
+            thead {
+                tr {
+                    th {
+                        border-color: #171717;
+                        label {
+                            font-family: $font_family;
+                            color: #CFE3EC !important;
+                            text-shadow: none;
+                            font-weight: bold;
+                            padding-left: 15px;
+                            line-height: 18px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    border-color: #171717;
+                    td {
+                        border-color: #171717;
+                        line-height: 18px;
+                        font-size: 12px;
+                        &.field-multiple-drag {
+                            background-color: #202020;
+                        }
+                    }
+                    &:hover {
+                        background-color: #303030;
+                    }
+                }
+            }
+        }
+        .form-item {
+            .clearfix {
+                text-align: right;
+                .field-add-more-submit {
+                    margin: 6px 0 !important;
+                    padding: 4px 17px !important;
+                    line-height: 14px !important;
+                    font-size: 12px !important;
+
+                }
+            }
+        }
+        .field-name-field-datum-narozen- {
+            .fieldset-wrapper {
+                .form-type-date-popup {
+                    display: block;
+                    margin: 0;
+                    .form-item {
+                        overflow: hidden;
+                        display: block;
+                        label,
+                        input,
+                        .description {
+                            display: inline-block;
+                            float: none;
+                            clear: none;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                        }
+                        label,
+                        .description {
+                            font-size: 10px;
+                            line-height: 18px;
+                            color: #CFE3EC !important;
+                            font-family: $font_family;
+                        }
+                    }
+                }
+            }
+        }
+        .field-name-field-rodn-slo,
+        .field-name-field-m-sto,
+        .field-name-field-ulice-zak,
+        .field-name-field-psc-zaka {
+            display: inline-block;
+            max-width: 33%;
+            margin-right: 5px;
+            .form-item {
+                display: block;
+                label {
+                    display: block;
+                    font-size: 12px;
+                    font-family: $font_family;
+                    color: #CFE3EC !important;
+                }
+                input {
+                    max-width: 95%;
+                }
+            }
         }
     }
 }
@@ -2255,6 +2395,13 @@ body.node-type-vedeni-skoly {
                 margin-top: 35px;
             }
         }
+        .group-zkousky-zaka {
+            .field-name-field-zak-zkousky {
+                .field-collection-view.view-mode-full {
+                    border-bottom: none;
+                }
+            }
+        }
         .group-osobni-udaje,
         .group-informace-vedouciho {
             .field {
@@ -2292,6 +2439,27 @@ body.node-type-vedeni-skoly {
                 border: solid 1px #171717;
                 background-color: #303030;
             }
+            &#edit-field-zak-fotografie {
+                float: none;
+                label {
+                    color: #CFE3EC;
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-weight: bold;
+                    display: block;
+                }
+                .image-widget {
+                    text-align: left;
+                    display: block;
+                    .image-widget-data {
+                        float: none;
+                        text-align: left;
+                        .filefield-sources-list {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
         }
         .field-name-field-pozice-vedouciho {
             padding-top: 5px;
@@ -2310,6 +2478,13 @@ body.node-type-vedeni-skoly {
             overflow: hidden;
             h3 {
                 display: none;
+            }
+            thead {
+                tr {
+                    th {
+                        color: #CFE3EC;
+                    }
+                }
             }
             table {
                 width: auto !important;
@@ -2358,6 +2533,304 @@ body.node-type-vedeni-skoly {
                 }
             }
         }
+        .group-zkousky-zaka {
+            .field-name-field-zak-zkousky {
+                .field-item {
+                    display: block;
+                    overflow: hidden;
+                    .field-collection-view {
+                        .entity-field-collection-item {
+                            display: block;
+                            overflow: hidden;
+                        }
+                        .group-informace-zkousky-main {
+                            tbody {
+                                tr {
+                                    td {
+                                        width: 25% !important;
+                                    }
+                                }
+                            }
+                        }
+                        .collapsible.field-group-fieldset {
+                            padding: 0;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            legend {
+                                background-color: #2d1c1c;
+                                &:hover {
+                                    background-color: #202020;
+                                }
+                            }
+                            .fieldset-wrapper {
+                                background-color: #666;
+                                padding: 10px 20px;
+                                margin: 25px 0 0 0;
+                                legend {
+                                    background-color: #393939;
+                                }
+                                .group-informace-zkousky {
+                                    border-bottom: solid 1px #171717;
+                                }
+                                .obdrzene-body {
+                                    border-top: solid 1px #171717;
+                                    margin: 0 1%;
+                                    min-width: 48%;
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                    h3 {
+                                        background: #757575;
+                                        background: rgba(0,0,0,0.51);
+                                        font-weight: bold;
+                                        padding: 4px 9px;
+                                        border: solid 1px #171717;
+                                        border-top: 0;
+                                        span {
+                                            color: #CFE3EC;
+                                        }
+                                    }
+                                    ul.links {
+                                        float: none;
+                                    }
+                                    .field-type-field-collection {
+                                        border: none;
+                                        .field-items {
+                                            border-left: solid 1px #171717;
+                                            border-bottom: solid 1px #171717;
+                                            width: 100%;
+                                            display: table;
+                                            .field-item {
+                                                background-color: #292929;
+                                                vertical-align: middle;
+                                                display: table-cell;
+                                                .field-collection-view {
+                                                    overflow: hidden;
+                                                    .content {
+                                                        .field {
+                                                            vertical-align: middle;
+                                                            display: block;
+                                                            font-weight: bold;
+                                                            border-right: solid 1px #171717;
+                                                            padding: 0;
+                                                            ul {
+                                                                padding: 4px 9px;
+                                                                li {
+                                                                    padding: 0;
+                                                                }
+                                                            }
+                                                            .field-items {
+                                                                padding: 4px 9px;
+                                                                width: auto;
+                                                                display: block;
+                                                                border: 0;
+                                                                border-top: solid 1px #171717;
+                                                                .field-item {
+                                                                    display: block;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .field-collection-view-links {
+                                                        float: none;
+                                                        padding: 0;
+                                                        border-bottom: solid 1px #171717;
+                                                        li {
+                                                            a {
+                                                                border: none;
+                                                                border-right: solid 1px #171717;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .field-collection-view-links {
+                            display: block;
+                            width: 100%;
+                            border: none;
+                            border-top: solid 1px #171717;
+                            border-collapse: separate;
+                            overflow: hidden;
+                            padding: 0 0 0 2px;
+                            background-color: #292929;
+                            li {
+                                display: table-cell;
+                                border-collapse: separate;
+                                min-width: 50%;
+                                border: none;
+                                a {
+                                    display: block;
+                                    margin: 0;
+                                    white-space: nowrap;
+                                    padding: 2px;
+                                    font-size: 10px;
+                                    line-height: 16px;
+                                    text-align: center;
+                                    border-left: solid 1px #171717;
+                                }
+                                &.edit {
+                                    max-width: 384px;
+                                }
+                                &.delete {
+                                    max-width: 383px;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .field-collection-view {
+                            .entity-field-collection-item {
+                                .group-informace-zkousky {
+                                    .field-group-multiple-table {
+                                        tbody {
+                                            tr {
+                                                td {
+                                                    background-color: #3a3a3a;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .field-collection-view {
+                            .field-collection-view-links {
+                                background-color: #153;
+                            }
+                            .field-collection-view {
+                                .field-collection-view-links {
+                                    background-color: #292929;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .action-links-field-collection-add {
+                float: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    display: inline-block;
+                    float: none;
+                    a {
+                        display: block;
+                        margin: 2px 0;
+                        font-size: 10px;
+                        line-height: 10px;
+                        border-color: #171717;
+                    }
+                }
+            }
+        }
+        .group-platby-zaka {
+            .field-name-field-platby-zaka {
+                border: none;
+                .group-zkousky,
+                .group-znamky,
+                .group-skolne,
+                .group-ostatni {
+                    margin-top: 0;
+                    border: none;
+                    min-height: 26px;
+                    padding-bottom: 0;
+                    legend {
+                        height: auto;
+                        border: none;
+                        span {
+                            a {
+                                background-color: #2d1c1c;
+                                height: 24px;
+                                display: block;
+                                border: solid 1px #171717;
+                                background-repeat: no-repeat;
+                                background-image: url(/misc/menu-collapsed.png);
+                                background-position: 5px 50%;
+                                &:hover {
+                                    background-color: #202020;
+                                }
+                            }
+                        }
+                    }
+                    .fieldset-wrapper {
+                        padding: 0;
+                        border: none;
+                        padding-top: 25px;
+                        .field-type-field-collection {
+                            border: none;
+                            border-right: solid 1px #171717;
+                            border-bottom: solid 1px #171717;
+                            clear: both;
+                            overflow: hidden;
+                            .field_collection_item_operations {
+                                overflow: hidden;
+                                .field-collection-view-links{
+                                    border: none;
+                                    li {
+                                        a {
+                                            display: block;
+                                            font-size: 10px !important;
+                                            line-height: 10px;
+                                            padding: 3px 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        ul.action-links-field-collection-add {
+                            clear: both;
+                            float: none;
+                            margin: 5px 0;
+                            overflow: hidden;
+                            text-align: right;
+                            li {
+                                display: inline-block;
+                                float: none;
+                                a {
+                                    display: block;
+                                    float: none;
+                                    font-size: 10px;
+                                    line-height: 10px;
+                                    padding: 3px 10px;
+                                }
+                            }
+                        }
+                    }
+                    &.collapsed {
+                        legend {
+                            span {
+                                a {
+                                    background-image: url(/misc/menu-expanded.png);
+                                    background-position: 5px 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .field-collection-view-links {
+                    float: none;
+                    display: block;
+                    border: none;
+                    text-align: right;
+                    li {
+                        float: none;
+                        display: inline-block;
+                        a {
+                            display: block;
+                            padding: 3px 10px;
+                            font-size: 10px;
+                            border: solid 1px #CFE3EC;
+                            line-height: 10px;
+                            margin: 0 0 0 10px;
+                        }
+                    }
+                }
+            }
+        }
         .field-type-field-collection {
             border: solid 1px #171717;
             border-collapse: inherit;
@@ -2385,7 +2858,6 @@ body.node-type-vedeni-skoly {
                         font-size: 12px !important;
                         border-color: #171717;
                         border-right-width: 0;
-                        width: 25% !important;
                     }
                     th {
                         white-space: nowrap;
@@ -2452,105 +2924,82 @@ body.node-type-vedeni-skoly {
                 }
             }
         }
-        .field_zkouska_technicky_stupen {
-            .field-name-field-zkouska-technicky-stupen {
-                padding-left: 85px;
-                background: url('../images/belts.png') left top no-repeat;
-            }
+        .field-name-field-zak-zkousky .field-item .field-collection-view .field-group-multiple-table tbody tr td {
             &.kup-10 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left top;
-                }
+                background: url('../images/belts.png') 3px 4px no-repeat;
+                padding-left: 85px;
             }
             &.kup-9 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -20px;
-                }
+                background: url('../images/belts.png') 3px -16px no-repeat;
+                padding-left: 85px;
             }
             &.kup-8 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -40px;
-                }
+                background: url('../images/belts.png') 3px -36px no-repeat;
+                padding-left: 85px;
             }
             &.kup-7 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -60px;
-                }
+                background: url('../images/belts.png') 3px -56px no-repeat;
+                padding-left: 85px;
             }
             &.kup-6 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -80px;
-                }
+                background: url('../images/belts.png') left -76px no-repeat;
+                padding-left: 85px;
             }
             &.kup-5 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -100px;
-                }
+                background: url('../images/belts.png') left -96px no-repeat;
+                padding-left: 85px;
             }
             &.kup-4 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -120px;
-                }
+                background: url('../images/belts.png') left -116px no-repeat;
+                padding-left: 85px;
             }
             &.kup-3 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -140px;
-                }
+                background: url('../images/belts.png') left -136px no-repeat;
+                padding-left: 85px;
             }
             &.kup-2 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -160px;
-                }
+                background: url('../images/belts.png') left -156px no-repeat;
+                padding-left: 85px;
             }
             &.kup-1 {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -180px;
-                }
+                background: url('../images/belts.png') left -176px no-repeat;
+                padding-left: 85px;
             }
             &.idan- {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -200px;
-                }
+                background: url('../images/belts.png') left -196px no-repeat;
+                padding-left: 85px;
             }
             &.iidan- {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -220px;
-                }
+                background: url('../images/belts.png') left -216px no-repeat;
+                padding-left: 85px;
             }
             &.iiidan- {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -240px;
-                }
+                background: url('../images/belts.png') left -236px no-repeat;
+                padding-left: 85px;
             }
             &.ivdan- {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -260px;
-                }
+                background: url('../images/belts.png') left -256px no-repeat;
+                padding-left: 85px;
             }
             &.vdan- {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -280px;
-                }
+                background: url('../images/belts.png') left -276px no-repeat;
+                padding-left: 85px;
             }
             &.vidan- {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -300px;
-                }
+                background: url('../images/belts.png') left -296px no-repeat;
+                padding-left: 85px;
             }
             &.viidan- {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -320px;
-                }
+                background: url('../images/belts.png') left -316px no-repeat;
+                padding-left: 85px;
             }
             &.viiidan- {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -340px;
-                }
+                background: url('../images/belts.png') left -336px no-repeat;
+                padding-left: 85px;
             }
             &.ixdan- {
-                .field-name-field-zkouska-technicky-stupen {
-                    background-position: left -360px;
-                }
+                background: url('../images/belts.png') left -356px no-repeat;
+                padding-left: 85px;
             }
         }
         .group-galerie-vedouciho {
@@ -3538,20 +3987,17 @@ body.page-user {
             .user-picture {
                 display: inline-block;
                 float: left;
-                a {
-                    display: block !important;
-                    padding: 8px;
-                    -moz-box-shadow: inset 0px 0px 5px #000000;
-                    -webkit-box-shadow: inset 0px 0px 5px #000000;
-                    box-shadow: inset 0px 0px 5px #000000;
+                padding: 8px;
+                -moz-box-shadow: inset 0px 0px 5px #000000;
+                -webkit-box-shadow: inset 0px 0px 5px #000000;
+                box-shadow: inset 0px 0px 5px #000000;
+                border: solid 1px #171717;
+                background-color: #303030;
+                img {
+                    margin: 0;
                     border: solid 1px #171717;
-                    background-color: #303030;
-                    img {
-                        margin: 0;
-                        border: solid 1px #171717;
-                        display: block;
-                        vertical-align: middle;
-                    }
+                    display: block;
+                    vertical-align: middle;
                 }
             }
             .field {

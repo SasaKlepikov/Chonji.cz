@@ -61,12 +61,14 @@
         });
 
         if ($('body.node-type-zak-skoly')) {
-            $('body.node-type-zak-skoly .field-name-field-zak-zkousky table tbody .field_zkouska_technicky_stupen').each(function () {
-                var NewClass = $(this).find('ul.links li').text();
-                var NewClassNumbers = NewClass.replace(/[^0-9]/g, "");
-                var NewClassLetters = NewClass.replace(/[^a-zA-Z]/g, "").toLowerCase();
-                var NewClassKonstruktor = NewClassLetters + '-' + NewClassNumbers;
-                $(this).addClass(NewClassKonstruktor);
+            $('body.node-type-zak-skoly .field-name-field-zak-zkousky .field-item .row-delta-0 td').each(function () {
+                var NewClass = $(this).text();
+                if (NewClass.indexOf(". kup") > 0 || NewClass.indexOf(". dan") > 0) {
+                    var NewClassNumbers = NewClass.replace(/[^0-9]/g, "");
+                    var NewClassLetters = NewClass.replace(/[^a-zA-Z]/g, "").toLowerCase();
+                    var NewClassKonstruktor = NewClassLetters + '-' + NewClassNumbers;
+                    $(this).addClass(NewClassKonstruktor);
+                }
             });
         }
         if ($('body.page-seznam-nasich-zaku') || $('body.page-seznam-nasich-zaku-vedouci')) {
