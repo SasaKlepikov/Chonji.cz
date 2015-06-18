@@ -1000,16 +1000,17 @@ form.node-form .field-widget-date-text,
 form.node-form .field-widget-text-textfield,
 form.node-form .field-widget-options-select,
 form.node-form .field-widget-taxonomy-autocomplete,
+form.node-form .field-type-list-boolean,
 #field-collection-item-form .field-widget-date-popup,
 #field-collection-item-form .field-widget-number,
 #field-collection-item-form .field-widget-options-buttons,
 #field-collection-item-form .field-widget-date-text,
 #field-collection-item-form .field-widget-text-textfield,
 #field-collection-item-form .field-widget-options-select,
-#field-collection-item-form .field-widget-taxonomy-autocomplete {
+#field-collection-item-form .field-widget-taxonomy-autocomplete,
+#field-collection-item-form .field-type-list-boolean {
     display: inline-block;
     padding: 5px 10px;
-    max-width: 20% !important;
     vertical-align: top;
 }
 form.node-form .field-widget-date-popup input,
@@ -1019,13 +1020,15 @@ form.node-form .field-widget-date-text input,
 form.node-form .field-widget-text-textfield input,
 form.node-form .field-widget-options-select input,
 form.node-form .field-widget-taxonomy-autocomplete input,
+form.node-form .field-type-list-boolean input,
 #field-collection-item-form .field-widget-date-popup input,
 #field-collection-item-form .field-widget-number input,
 #field-collection-item-form .field-widget-options-buttons input,
 #field-collection-item-form .field-widget-date-text input,
 #field-collection-item-form .field-widget-text-textfield input,
 #field-collection-item-form .field-widget-options-select input,
-#field-collection-item-form .field-widget-taxonomy-autocomplete input {
+#field-collection-item-form .field-widget-taxonomy-autocomplete input,
+#field-collection-item-form .field-type-list-boolean input {
     max-width: 95%;
 }
 form.node-form .form-wrapper,

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default theme implementation to display the basic html structure of a single
@@ -42,33 +41,44 @@
  *
  * @ingroup themeable
  */
+$node_type = menu_get_object();
+$this_node_type = $node_type->type;
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+    "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
 
-<head profile="<?php print $grddl_profile; ?>">
-  <meta property="og:image" content="http://chonji.cz/sites/all/themes/bartik/images/chonji.png" />
-  <?php print $head; ?>
-  <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
-  <?php print $scripts; ?>
-</head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <head profile="<?php print $grddl_profile; ?>">
+        <?php if ($this_node_type != 'galerie') { ?>
+          <meta property="og:image" content="http://chonji.cz/sites/all/themes/bartik/images/chonji.png" />
+        <?php } ?>
+        <?php print $head; ?>
+        <title><?php print $head_title; ?></title>
+        <?php print $styles; ?>
+        <?php print $scripts; ?>
+    </head>
+    <body class="<?php print $classes; ?>" <?php print $attributes; ?>>
+        <script>
+          (function (i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r;
+              i[r] = i[r] || function () {
+                  (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date();
+              a = s.createElement(o),
+                      m = s.getElementsByTagName(o)[0];
+              a.async = 1;
+              a.src = g;
+              m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-39906143-1', 'auto');
-  ga('send', 'pageview');
+          ga('create', 'UA-39906143-1', 'auto');
+          ga('send', 'pageview');
 
-</script>
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
-  <?php print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
-</body>
+        </script>
+        <div id="skip-link">
+            <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+        </div>
+        <?php print $page_top; ?>
+        <?php print $page; ?>
+        <?php print $page_bottom; ?>
+    </body>
 </html>

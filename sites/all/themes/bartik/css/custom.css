@@ -598,8 +598,34 @@ a.button {
                   #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid tbody tr th,
                   #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid tbody tr td {
                     border-color: #171717;
-                    border-right-width: 0;
-                    width: 25% !important; }
+                    border-right-width: 0; }
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table thead tr th.views-field-field-place,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table thead tr td.views-field-field-place,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table tbody tr th.views-field-field-place,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table tbody tr td.views-field-field-place,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid thead tr th.views-field-field-place,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid thead tr td.views-field-field-place,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid tbody tr th.views-field-field-place,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid tbody tr td.views-field-field-place {
+                      width: 115px; }
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table thead tr th.views-field-field-time,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table thead tr td.views-field-field-time,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table tbody tr th.views-field-field-time,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table tbody tr td.views-field-field-time,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid thead tr th.views-field-field-time,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid thead tr td.views-field-field-time,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid tbody tr th.views-field-field-time,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid tbody tr td.views-field-field-time {
+                      width: 80px; }
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table thead tr th.views-field-field-vede,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table thead tr td.views-field-field-vede,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table tbody tr th.views-field-field-vede,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table tbody tr td.views-field-field-vede,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid thead tr th.views-field-field-vede,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid thead tr td.views-field-field-vede,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid tbody tr th.views-field-field-vede,
+                    #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid tbody tr td.views-field-field-vede {
+                      width: 110px; }
                   #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table thead tr th,
                   #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-table tbody tr th,
                   #page-wrapper #page #main-wrapper #main #content .section .region-content .block .content .view-content .views-view-grid thead tr th,
@@ -687,6 +713,47 @@ a.button {
                   margin-top: 0; }
                 #page-wrapper #page #main-wrapper #main #content .section .region-content .block#block-views-akce-nasi-skoly-block h2 {
                   color: #ff9900 !important; }
+              #page-wrapper #page #main-wrapper #main #content .section .region-content fieldset {
+                border: solid 1px #171717;
+                background-color: #3a3a3a;
+                -khtml-border-radius: 0px;
+                -moz-border-radius: 0px;
+                -webkit-border-radius: 0px;
+                border-radius: 0px; }
+                #page-wrapper #page #main-wrapper #main #content .section .region-content fieldset .fieldset-description {
+                  color: #dbdbdb; }
+                #page-wrapper #page #main-wrapper #main #content .section .region-content fieldset legend {
+                  margin: 0;
+                  border: none;
+                  border-bottom: solid 1px #171717;
+                  background-color: #3a3a3a;
+                  -khtml-border-radius: 0px;
+                  -moz-border-radius: 0px;
+                  -webkit-border-radius: 0px;
+                  border-radius: 0px;
+                  z-index: 10;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  right: 0; }
+                  #page-wrapper #page #main-wrapper #main #content .section .region-content fieldset legend .fieldset-title,
+                  #page-wrapper #page #main-wrapper #main #content .section .region-content fieldset legend .fieldset-legend {
+                    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                    color: #CFE3EC !important;
+                    text-shadow: none;
+                    font-weight: bold;
+                    padding-left: 15px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: block; }
+                #page-wrapper #page #main-wrapper #main #content .section .region-content fieldset.collapsed {
+                  height: 2em;
+                  padding: 0; }
+                #page-wrapper #page #main-wrapper #main #content .section .region-content fieldset.collapsible .fieldset-wrapper, #page-wrapper #page #main-wrapper #main #content .section .region-content fieldset#edit-notify-page-master .fieldset-wrapper {
+                  margin-top: 35px; }
           #page-wrapper #page #main-wrapper #main #content h1,
           #page-wrapper #page #main-wrapper #main #content h2 {
             color: #CFE3EC; }
@@ -2240,6 +2307,7 @@ body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-fi
     body.node-type-vedeni-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-ostatni .fieldset-wrapper {
       padding: 0;
       border: none;
+      margin: 0 !important;
       padding-top: 25px; }
       body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-zkousky .fieldset-wrapper .field-type-field-collection,
       body.node-type-zak-skoly #block-system-main .group-platby-zaka .field-name-field-platby-zaka .group-znamky .fieldset-wrapper .field-type-field-collection,

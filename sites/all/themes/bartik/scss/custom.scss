@@ -753,7 +753,15 @@ a.button {
                                                     td {
                                                         border-color: #171717;
                                                         border-right-width: 0;
-                                                        width: 25% !important;
+                                                        &.views-field-field-place {
+                                                            width: 115px;
+                                                        }
+                                                        &.views-field-field-time {
+                                                            width: 80px;
+                                                        }
+                                                        &.views-field-field-vede {
+                                                            width: 110px;
+                                                        }
                                                     }
                                                     th {
                                                         white-space: nowrap;
@@ -867,6 +875,56 @@ a.button {
                                 &#block-views-akce-nasi-skoly-block {
                                     h2 {
                                         color: #ff9900 !important;
+                                    }
+                                }
+                            }
+                            fieldset {
+                                border: solid 1px #171717;
+                                background-color: #3a3a3a;
+                                -khtml-border-radius: 0px;
+                                -moz-border-radius: 0px;
+                                -webkit-border-radius: 0px;
+                                border-radius: 0px;
+                                .fieldset-description {
+                                    color: #dbdbdb;
+                                }
+                                legend {
+                                    margin: 0;
+                                    border: none;
+                                    border-bottom: solid 1px #171717;
+                                    background-color: #3a3a3a;
+                                    -khtml-border-radius: 0px;
+                                    -moz-border-radius: 0px;
+                                    -webkit-border-radius: 0px;
+                                    border-radius: 0px;
+                                    z-index: 10;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    right: 0;
+                                    .fieldset-title,
+                                    .fieldset-legend {
+                                        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                                        color: #CFE3EC !important;
+                                        text-shadow: none;
+                                        font-weight: bold;
+                                        padding-left: 15px;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        display: block;
+                                    }
+                                }
+                                &.collapsed {
+                                    height: 2em;
+                                    padding: 0;
+                                }
+                                &.collapsible,
+                                &#edit-notify-page-master {
+                                    .fieldset-wrapper {
+                                        margin-top: 35px;
                                     }
                                 }
                             }
@@ -2759,6 +2817,7 @@ body.node-type-vedeni-skoly {
                     .fieldset-wrapper {
                         padding: 0;
                         border: none;
+                        margin: 0 !important;
                         padding-top: 25px;
                         .field-type-field-collection {
                             border: none;

@@ -371,13 +371,6 @@ class views_handler_filter_selective extends views_handler_filter_in_operator {
       unset($display->display_options['query']['options']['distinct']);
       unset($display->display_options['query']['options']['pure_distinct']);
 
-      // Some style plugins can affect the built query, make sure
-      // we use a reliable field based style plugin.
-      $display->display_options['style_plugin'] = 'default';
-      $display->display_options['style_options'] = unserialize('a:4:{s:9:"row_class";s:0:"";s:17:"default_row_class";i:1;s:17:"row_class_special";i:1;s:11:"uses_fields";i:0;}');
-      $display->display_options['row_plugin'] = 'fields';
-      $display->display_options['row_options'] = unserialize('s:6:"fields";');
-
       // Run View.
       $view_copy->execute($this->view->current_display);
 
@@ -484,9 +477,6 @@ class views_handler_filter_selective extends views_handler_filter_in_operator {
         // We store only non-empty array.
         if (is_array($options) && !empty($options)) {
           $this->originalOptions = $options;
-        }
-        else {
-          $this->originalOptions = array();
         }
       }
     }
